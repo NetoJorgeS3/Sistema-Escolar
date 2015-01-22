@@ -2953,7 +2953,49 @@ public class Descktop extends javax.swing.JFrame {
     }//GEN-LAST:event_BotaoSalvaCAActionPerformed
 
     private void BotaoListarAlunoLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoListarAlunoLActionPerformed
-  
+      ConexaoBD conexao = new ConexaoBD();
+        Connection conn = conexao.getConnection();
+
+        String comandoSelect = "SELECT ALL * FROM aluno";
+
+        try {
+            if (conn == null) {
+                JOptionPane.showMessageDialog(null, "Erro de Conexão Com Banco de Dados",
+                        null, JOptionPane.ERROR_MESSAGE);
+            } else {
+                Statement statement = conn.createStatement();
+                statement.execute(comandoSelect);
+                ResultSet rs = statement.getResultSet();
+                DefaultTableModel modelo = (DefaultTableModel) Tabela.getModel();
+
+                while (rs.next()) {
+
+                    modelo.addRow(new String[]{
+                        rs.getString("matricula"),
+                        rs.getString("nome"),
+                        rs.getString("data_Nasc"),
+                        rs.getString("idade"),
+                        rs.getString("sexo"),
+                        rs.getString("nome_Pai"),
+                        rs.getString("nome_Mae"),
+                        rs.getString("data_Mat"),
+                        rs.getString("capacidade"),
+                        rs.getString("codigo_Turma"),});
+
+                }
+            }
+
+            // }catch(ClassNotFoundException ex){
+            //  JOptionPane.showMessageDialog(null, "Erro A classe do driver JDBC não foi encontrada", null, JOptionPane.ERROR_MESSAGE);
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Erro Ocorreu um erro ao acessar o banco de dados!", null, JOptionPane.ERROR_MESSAGE);
+        }finally{
+            try{
+                if (conn != null) conn.close();
+            }catch (SQLException e){
+                e.printStackTrace();
+            }
+        }
     }//GEN-LAST:event_BotaoListarAlunoLActionPerformed
 
     private void BotaoLimparAlunoLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoLimparAlunoLActionPerformed
