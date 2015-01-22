@@ -20,6 +20,7 @@ import javax.swing.table.DefaultTableModel;
  * @author neto
  */
 public class Descktop extends javax.swing.JFrame {
+    private Connection c;
 
     /**
      * Creates new form Descktop
@@ -2642,8 +2643,45 @@ public class Descktop extends javax.swing.JFrame {
     }//GEN-LAST:event_campLoginUsuarioActionPerformed
 
     private void BotaoEntraLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoEntraLoginActionPerformed
-      
+ ConexaoBD conexao = new ConexaoBD();
+        Connection conn = c;
+                conexao.getConnection();
+        String Select = "Select * from usuarioad where login='" + campLogin.getText()
+                + "' and senha='" + campSenha.getText() + "'";
 
+        
+        try {
+
+            Statement stmt = conn.createStatement();
+            ResultSet resultado = stmt.executeQuery(Select);
+
+            if (resultado.next()) {
+                System.out.println("login:" + resultado.getString("login"));
+                System.out.println("senha:" + resultado.getString("senha"));
+                System.out.println();
+
+                //JOptionPane.showMessageDialog(null, "Usuario Logado!");
+                home.setVisible(true);
+                login.setVisible(false);
+            } else {
+                JOptionPane.showMessageDialog(null, "Usuario Não Logado");
+                login.setVisible(true);
+                home.setVisible(false);
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
+        }finally{
+            try{
+                
+                if (conn != null) conn.close();
+            }catch (SQLException e){
+                e.printStackTrace();
+            }
+        }
+        this.campLogin.setText("");
+        this.campSenha.setText("");
+      
     }//GEN-LAST:event_BotaoEntraLoginActionPerformed
 
     private void BotaoCadastrarLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoCadastrarLoginActionPerformed
