@@ -20,7 +20,6 @@ import javax.swing.table.DefaultTableModel;
  * @author neto
  */
 public class Descktop extends javax.swing.JFrame {
-    private Connection c;
 
     /**
      * Creates new form Descktop
@@ -2643,13 +2642,15 @@ public class Descktop extends javax.swing.JFrame {
     }//GEN-LAST:event_campLoginUsuarioActionPerformed
 
     private void BotaoEntraLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoEntraLoginActionPerformed
- ConexaoBD conexao = new ConexaoBD();
-        Connection conn = c;
-                conexao.getConnection();
+        //home.setVisible(true);
+        //login.setVisible(false);
+        ConexaoBD conexao = new ConexaoBD();
+        Connection conn = conexao.getConnection();
+
+        conexao.getConnection();
         String Select = "Select * from usuarioad where login='" + campLogin.getText()
                 + "' and senha='" + campSenha.getText() + "'";
 
-        
         try {
 
             Statement stmt = conn.createStatement();
@@ -2664,32 +2665,92 @@ public class Descktop extends javax.swing.JFrame {
                 home.setVisible(true);
                 login.setVisible(false);
             } else {
-                JOptionPane.showMessageDialog(null, "Usuario Não Logado");
+                JOptionPane.showMessageDialog(null, "Cadastre-se para Logar");
                 login.setVisible(true);
                 home.setVisible(false);
             }
 
         } catch (SQLException ex) {
             Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
-        }finally{
-            try{
-                
-                if (conn != null) conn.close();
-            }catch (SQLException e){
+        } finally {
+            try {
+
+           
+                if (conn != null) {
+ 
+                    conn.close();
+                    
+                }
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
         this.campLogin.setText("");
         this.campSenha.setText("");
-      
+
     }//GEN-LAST:event_BotaoEntraLoginActionPerformed
 
     private void BotaoCadastrarLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoCadastrarLoginActionPerformed
-      
+        login.setVisible(false);
+        cadastroUsuario.setVisible(true);
+        home.setVisible(false);
+        CadastarAluno.setVisible(false);
+        ConsultarAluno.setVisible(false);
+        CadastraProfessor.setVisible(false);
+        CadastraProfessor1.setVisible(false);
+        CadastarTurma.setVisible(false);
+        ConsultarTurma.setVisible(false);
+        ListarAluno.setVisible(false);
+        ListarProfessor.setVisible(false);
+        ListarTurma.setVisible(false);
     }//GEN-LAST:event_BotaoCadastrarLoginActionPerformed
 
     private void BotaoSalvaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSalvaActionPerformed
-       
+        login.setVisible(false);
+        cadastroUsuario.setVisible(true);
+        ConexaoBD conexao = new ConexaoBD();
+        Connection conn = conexao.getConnection();
+
+        String insert = "insert into usuarioad (login, nome, senha, conf_Senha)"
+                + "values(" + "'" + campLoginUsuario.getText()
+                + "','" + campNomemUsuario.getText()
+                + "','" + campSenhaUsuario.getText()
+                + "','" + campConfirmaSenhanUsuario.getText() + "')";
+
+        Statement stmt = null;
+
+        try {
+            stmt = conn.createStatement();
+            int resultado = stmt.executeUpdate(insert);
+
+            if (resultado == 1) {
+                JOptionPane.showMessageDialog(null, "Cadastro Efetuado com sucesso!");
+                login.setVisible(true);
+                cadastroUsuario.setVisible(false);
+            } else {
+                JOptionPane.showMessageDialog(null, "Error!");
+                login.setVisible(false);
+                cadastroUsuario.setVisible(true);
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                if (stmt != null) {
+                    stmt.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        this.campLoginUsuario.setText("");
+        this.campNomemUsuario.setText("");
+        this.campSenhaUsuario.setText("");
+        this.campConfirmaSenhanUsuario.setText("");
     }//GEN-LAST:event_BotaoSalvaActionPerformed
 
     private void BotaoSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSairActionPerformed
@@ -2841,7 +2902,7 @@ public class Descktop extends javax.swing.JFrame {
     }//GEN-LAST:event_BotaoCadastrarTurmaActionPerformed
 
     private void BotaoConsultarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoConsultarAlunoActionPerformed
-       login.setVisible(false);
+        login.setVisible(false);
         cadastroUsuario.setVisible(false);
         home.setVisible(false);
         CadastarAluno.setVisible(false);
@@ -2901,7 +2962,7 @@ public class Descktop extends javax.swing.JFrame {
     }//GEN-LAST:event_BotaoListarAlunoActionPerformed
 
     private void BotaoListarProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoListarProfessorActionPerformed
-       login.setVisible(false);
+        login.setVisible(false);
         cadastroUsuario.setVisible(false);
         home.setVisible(false);
         CadastarAluno.setVisible(false);
@@ -2956,23 +3017,27 @@ public class Descktop extends javax.swing.JFrame {
 
             if (resultado == 1) {
                 JOptionPane.showMessageDialog(null, "Cadastro Efetuado!");
-                
+
                 CadastarAluno.setVisible(true);
-               
+
             } else {
                 JOptionPane.showMessageDialog(null, "Error!");
-                
+
                 CadastarAluno.setVisible(true);
-               
+
             }
 
         } catch (SQLException ex) {
             Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
-        }finally{
-            try{
-                if (stmt !=null) stmt.close();
-                if (conn != null) conn.close();
-            }catch (SQLException e){
+        } finally {
+            try {
+                if (stmt != null) {
+                    stmt.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
@@ -2991,7 +3056,8 @@ public class Descktop extends javax.swing.JFrame {
     }//GEN-LAST:event_BotaoSalvaCAActionPerformed
 
     private void BotaoListarAlunoLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoListarAlunoLActionPerformed
-      ConexaoBD conexao = new ConexaoBD();
+
+        ConexaoBD conexao = new ConexaoBD();
         Connection conn = conexao.getConnection();
 
         String comandoSelect = "SELECT ALL * FROM aluno";
@@ -3027,10 +3093,12 @@ public class Descktop extends javax.swing.JFrame {
             //  JOptionPane.showMessageDialog(null, "Erro A classe do driver JDBC não foi encontrada", null, JOptionPane.ERROR_MESSAGE);
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "Erro Ocorreu um erro ao acessar o banco de dados!", null, JOptionPane.ERROR_MESSAGE);
-        }finally{
-            try{
-                if (conn != null) conn.close();
-            }catch (SQLException e){
+        } finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
@@ -3079,10 +3147,12 @@ public class Descktop extends javax.swing.JFrame {
 
         } catch (SQLException ex) {
             Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
-        }finally{
-            try{
-                if (conn != null) conn.close();
-            }catch (SQLException e){
+        } finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
@@ -3093,10 +3163,7 @@ public class Descktop extends javax.swing.JFrame {
         Connection conn = conexao.getConnection();
 
         //String Update = "Update aluno set nome, "where matricula =" + " + CampMatriculaCoA.getText();
-        
-        
-      
-               
+
     }//GEN-LAST:event_BotaoSalvarCoAActionPerformed
 
     private void BotaoHomeCProf1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoHomeCProf1ActionPerformed
@@ -3113,7 +3180,7 @@ public class Descktop extends javax.swing.JFrame {
     }//GEN-LAST:event_BotaoHomeCProf1ActionPerformed
 
     private void BotaoHomeCTurma1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoHomeCTurma1ActionPerformed
-    login.setVisible(false);
+        login.setVisible(false);
         cadastroUsuario.setVisible(false);
         home.setVisible(true);
         CadastarAluno.setVisible(false);
@@ -3126,10 +3193,10 @@ public class Descktop extends javax.swing.JFrame {
     }//GEN-LAST:event_BotaoHomeCTurma1ActionPerformed
 
     private void BotaoDeletarCoAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoDeletarCoAActionPerformed
-       ConexaoBD conexao = new ConexaoBD();
+        ConexaoBD conexao = new ConexaoBD();
         Connection conn = conexao.getConnection();
         String Delete = "Delete * from aluno where Matricula='" + CampMatriculaCoA.getText() + "'";
-        
+
         try {
 
             Statement stmt = conn.createStatement();
@@ -3141,7 +3208,6 @@ public class Descktop extends javax.swing.JFrame {
                 System.out.println();
 
                 JOptionPane.showMessageDialog(null, "Aluno encontrado!");
-                
 
             } else {
                 JOptionPane.showMessageDialog(null, "aluno não encotrado");
@@ -3150,10 +3216,12 @@ public class Descktop extends javax.swing.JFrame {
 
         } catch (SQLException ex) {
             Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
-        }finally{
-            try{
-                if (conn != null) conn.close();
-            }catch (SQLException e){
+        } finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
@@ -3179,33 +3247,37 @@ public class Descktop extends javax.swing.JFrame {
 
             if (resultado == 1) {
                 JOptionPane.showMessageDialog(null, "Cadastro Efetuado!");
-             
+
                 CadastraProfessor.setVisible(true);
-                
+
             } else {
                 JOptionPane.showMessageDialog(null, "Error!");
-                
+
                 CadastraProfessor.setVisible(true);
-                
+
             }
 
         } catch (SQLException ex) {
             Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
-        }finally{
-            try{
-                if (stmt !=null) stmt.close();
-                if (conn != null) conn.close();
-            }catch (SQLException e){
+        } finally {
+            try {
+                if (stmt != null) {
+                    stmt.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
- 
+
         this.CampMatriculaCP.setText("");
         this.CampNomeCP.setText("");
         this.CampEnderecoCP.setText("");
         this.CampSexoCP.setText("");
         this.CampCodigoTurmaCP.setText("");
-  
+
     }//GEN-LAST:event_BotaoSalvarCPActionPerformed
 
     private void CampMatriculaCPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampMatriculaCPActionPerformed
@@ -3243,23 +3315,25 @@ public class Descktop extends javax.swing.JFrame {
 
             if (resultado == 1) {
                 JOptionPane.showMessageDialog(null, "Cadastro Efetuado!");
-                
+
                 //CadastarTurma.setVisible(true);
-               
             } else {
                 JOptionPane.showMessageDialog(null, "Error!");
-                
+
                // CadastarTurma.setVisible(true);
-               
             }
 
         } catch (SQLException ex) {
             Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
-        }finally{
-            try{
-                if (stmt !=null) stmt.close();
-                if (conn != null) conn.close();
-            }catch (SQLException e){
+        } finally {
+            try {
+                if (stmt != null) {
+                    stmt.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
@@ -3296,10 +3370,59 @@ public class Descktop extends javax.swing.JFrame {
 
     private void BotaoListaTurmaLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoListaTurmaLActionPerformed
 
+        ConexaoBD conexao = new ConexaoBD();
+        Connection conn = conexao.getConnection();
+
+        String comandoSelect = "SELECT ALL * FROM turma";
+
+        try {
+            if (conn == null) {
+                JOptionPane.showMessageDialog(null, "Erro de Conexão Com Banco de Dados",
+                        null, JOptionPane.ERROR_MESSAGE);
+            } else {
+                Statement statement = conn.createStatement();
+                statement.execute(comandoSelect);
+                ResultSet rs = statement.getResultSet();
+                DefaultTableModel modelo = (DefaultTableModel) Tabela1.getModel();
+
+                while (rs.next()) {
+
+                    modelo.addRow(new String[]{
+                        rs.getString("Cod_Turma"),
+                        rs.getString("AnoNivel"),
+                        rs.getString("Turma"),
+                        rs.getString("Turno"),
+                        rs.getString("Sala"),
+                        rs.getString("Ano"),
+                        rs.getString("Disciplina1"),
+                        rs.getString("Disciplina2"),
+                        rs.getString("Disciplina3"),
+                        rs.getString("Disciplina4"),
+                        rs.getString("Disciplina5"),
+                        rs.getString("Disciplina6"),
+                        rs.getString("Disciplina7"),
+                        rs.getString("Disciplina8"),});
+
+                }
+            }
+
+            // }catch(ClassNotFoundException ex){
+            //  JOptionPane.showMessageDialog(null, "Erro A classe do driver JDBC não foi encontrada", null, JOptionPane.ERROR_MESSAGE);
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Erro Ocorreu um erro ao acessar o banco de dados!", null, JOptionPane.ERROR_MESSAGE);
+        } finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }//GEN-LAST:event_BotaoListaTurmaLActionPerformed
 
     private void BotaoLimparTurmaLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoLimparTurmaLActionPerformed
-       
+
         DefaultTableModel modelo = (DefaultTableModel) Tabela1.getModel();
 
         int contar = modelo.getRowCount();
@@ -3324,11 +3447,51 @@ public class Descktop extends javax.swing.JFrame {
     }//GEN-LAST:event_BotaoHomeLProfessorActionPerformed
 
     private void BotaoListarProfessorLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoListarProfessorLActionPerformed
-       
+
+        ConexaoBD conexao = new ConexaoBD();
+        Connection conn = conexao.getConnection();
+
+        String comandoSelect = "SELECT ALL * FROM professor";
+
+        try {
+            if (conn == null) {
+                JOptionPane.showMessageDialog(null, "Erro de Conexão Com Banco de Dados",
+                        null, JOptionPane.ERROR_MESSAGE);
+            } else {
+                Statement statement = conn.createStatement();
+                statement.execute(comandoSelect);
+                ResultSet rs = statement.getResultSet();
+                DefaultTableModel modelo = (DefaultTableModel) Tabela2.getModel();
+
+                while (rs.next()) {
+
+                    modelo.addRow(new String[]{
+                        rs.getString("matricula"),
+                        rs.getString("nome"),
+                        rs.getString("endereco"),
+                        rs.getString("sexo"),
+                        rs.getString("cod_Turma"),});
+
+                }
+            }
+
+            // }catch(ClassNotFoundException ex){
+            //  JOptionPane.showMessageDialog(null, "Erro A classe do driver JDBC não foi encontrada", null, JOptionPane.ERROR_MESSAGE);
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Erro Ocorreu um erro ao acessar o banco de dados!", null, JOptionPane.ERROR_MESSAGE);
+        } finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
     }//GEN-LAST:event_BotaoListarProfessorLActionPerformed
 
     private void BotaoLimparrProfessorLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoLimparrProfessorLActionPerformed
-       
+
         DefaultTableModel modelo = (DefaultTableModel) Tabela2.getModel();
 
         int contar = modelo.getRowCount();
@@ -3338,7 +3501,7 @@ public class Descktop extends javax.swing.JFrame {
     }//GEN-LAST:event_BotaoLimparrProfessorLActionPerformed
 
     private void BotaoPesquisaCoPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoPesquisaCoPActionPerformed
-      
+
         ConexaoBD conexao = new ConexaoBD();
         Connection conn = conexao.getConnection();
         String Select = "Select * from professor where Matricula='" + campMatricularCoP.getText() + "'";
@@ -3366,10 +3529,12 @@ public class Descktop extends javax.swing.JFrame {
 
         } catch (SQLException ex) {
             Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
-        }finally{
-            try{
-                if (conn != null) conn.close();
-            }catch (SQLException e){
+        } finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
@@ -3380,8 +3545,8 @@ public class Descktop extends javax.swing.JFrame {
     }//GEN-LAST:event_campNomeCoPActionPerformed
 
     private void BotaoPesquisarCoTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoPesquisarCoTActionPerformed
-     
-         ConexaoBD conexao = new ConexaoBD();
+
+        ConexaoBD conexao = new ConexaoBD();
         Connection conn = conexao.getConnection();
         String Select = "Select * from turma where Cod_Turma='" + CampMatriculaCoT.getText() + "'";
 
@@ -3417,14 +3582,16 @@ public class Descktop extends javax.swing.JFrame {
 
         } catch (SQLException ex) {
             Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
-        }finally{
-            try{
-                if (conn != null) conn.close();
-            }catch (SQLException e){
+        } finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
-       
+
     }//GEN-LAST:event_BotaoPesquisarCoTActionPerformed
 
     private void CampMatriculaCA51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampMatriculaCA51ActionPerformed
