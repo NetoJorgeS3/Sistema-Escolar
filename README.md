@@ -4,8 +4,10 @@ O Sistema Escolar tem por finalidade dar suporte na área administrativa,
 nas escolas da rede publica. 
 
 #Funcionalidades:
+
 O sistema tem como função: 
 CADASTRAR: 
+
 Alunos, turmas, disciplinas e professores; 
 REGISTRAR: 
 Notas, faltas; 
