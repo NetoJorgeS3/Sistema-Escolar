@@ -5,14 +5,17 @@ nas escolas da rede publica.
 
 #Funcionalidades:
 
-O sistema tem como função: 
-CADASTRAR: 
+O sistema tem como função:
 
+CADASTRAR: 
 Alunos, turmas, disciplinas e professores; 
+
 REGISTRAR: 
 Notas, faltas; 
+
 FAZER EMISSÃO: 
 Boletins, declarações e histórico;
+
 CRUD:
 Selecionar, Editar, listar, excluir. 
 #Ferramentas utilizadas no desenvolvimento:
