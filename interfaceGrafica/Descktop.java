@@ -26,18 +26,16 @@ public class Descktop extends javax.swing.JFrame {
      */
     public Descktop() {
         initComponents();
-        login.setVisible(true);
+        login.setVisible(false);
         cadastroUsuario.setVisible(false);
-        home.setVisible(false);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
+        home.setVisible(true);
+        Aluno.setVisible(false);
+        Professor.setVisible(false);
+        Turma.setVisible(false);
         ListarAluno.setVisible(false);
         ListarProfessor.setVisible(false);
         ListarTurma.setVisible(false);
+        NotasFaltas.setVisible(false);
 
     }
 
@@ -83,48 +81,46 @@ public class Descktop extends javax.swing.JFrame {
         jPanel7 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         BotaoSair = new javax.swing.JButton();
-        jLabel13 = new javax.swing.JLabel();
-        BotaoCadastrarAluno = new javax.swing.JButton();
-        BotaoCadastrarProfessor = new javax.swing.JButton();
-        BotaoCadastrarTurma = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
-        BotaoConsultarAluno = new javax.swing.JButton();
-        BotaoConsultarProfessor = new javax.swing.JButton();
-        BotaoConsultarTurma = new javax.swing.JButton();
-        jLabel15 = new javax.swing.JLabel();
-        BotaoListarAluno = new javax.swing.JButton();
-        BotaoListarProfessor = new javax.swing.JButton();
-        BotaoListarTurma = new javax.swing.JButton();
-        CadastarAluno = new javax.swing.JInternalFrame();
+        BotaoTurma = new javax.swing.JButton();
+        BotaorAluno = new javax.swing.JButton();
+        BotaoProfessor = new javax.swing.JButton();
+        Aluno = new javax.swing.JInternalFrame();
         jPanel8 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         BotaoHomeCAluno = new javax.swing.JButton();
         jLabel16 = new javax.swing.JLabel();
-        jButton17 = new javax.swing.JButton();
-        BotaoSalvaCA = new javax.swing.JButton();
+        SelecionaAluno = new javax.swing.JButton();
+        SalvaAluno = new javax.swing.JButton();
         jLabel19 = new javax.swing.JLabel();
-        CampMatricula = new javax.swing.JTextField();
+        CampMatriculaAluno = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
-        CampNomeCA = new javax.swing.JTextField();
+        CampNomeAluno = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
-        CampDataNascCA = new javax.swing.JTextField();
+        CampDataNascAluno = new javax.swing.JTextField();
         jLabel22 = new javax.swing.JLabel();
-        CampNomeMãeCA = new javax.swing.JTextField();
+        CampNomeMaeAluno = new javax.swing.JTextField();
         jLabel23 = new javax.swing.JLabel();
-        CampNomePaiCA = new javax.swing.JTextField();
+        CampNomePaiAluno = new javax.swing.JTextField();
         jLabel24 = new javax.swing.JLabel();
-        CampCapacidadeCA = new javax.swing.JTextField();
-        CampIdadeCA = new javax.swing.JTextField();
+        CampCapacidadeAluno = new javax.swing.JTextField();
+        CampIdadeAluno = new javax.swing.JTextField();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
-        CampCódigoTurmaCA = new javax.swing.JTextField();
+        CampCodigoTurmaAluno = new javax.swing.JTextField();
         jLabel32 = new javax.swing.JLabel();
-        CampDataMatCA = new javax.swing.JTextField();
-        CampSexoCA = new javax.swing.JTextField();
+        CampDataMatAluno = new javax.swing.JTextField();
+        CampSexoAluno = new javax.swing.JTextField();
+        AtualizarAluno = new javax.swing.JButton();
+        LimparAluno = new javax.swing.JButton();
+        ExcluirAluno = new javax.swing.JButton();
+        ListarAlunoAluno = new javax.swing.JButton();
+        Historico = new javax.swing.JButton();
+        EnserirNota = new javax.swing.JButton();
         ListarAluno = new javax.swing.JInternalFrame();
         jPanel12 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
@@ -136,143 +132,63 @@ public class Descktop extends javax.swing.JFrame {
         BotaoLimparAlunoL = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jScrollPane2 = new javax.swing.JScrollPane();
-        Tabela = new javax.swing.JTable();
-        CadastraProfessor = new javax.swing.JInternalFrame();
+        TabelaAluno = new javax.swing.JTable();
+        Professor = new javax.swing.JInternalFrame();
         jPanel16 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
         jLabel86 = new javax.swing.JLabel();
         BotaoHomeCProf = new javax.swing.JButton();
         jLabel87 = new javax.swing.JLabel();
-        BotaoLimparCP = new javax.swing.JButton();
-        BotaoSalvarCP = new javax.swing.JButton();
         jLabel88 = new javax.swing.JLabel();
         jLabel89 = new javax.swing.JLabel();
-        CampNomeCP = new javax.swing.JTextField();
+        CampNomeProfessor = new javax.swing.JTextField();
         jLabel90 = new javax.swing.JLabel();
-        CampEnderecoCP = new javax.swing.JTextField();
+        CampEnderecoProfessor = new javax.swing.JTextField();
         jLabel92 = new javax.swing.JLabel();
         jLabel94 = new javax.swing.JLabel();
         jLabel95 = new javax.swing.JLabel();
         jLabel96 = new javax.swing.JLabel();
-        CampSexoCP = new javax.swing.JTextField();
-        CampCodigoTurmaCP = new javax.swing.JTextField();
-        CampMatriculaCP = new javax.swing.JTextField();
-        ConsultarAluno = new javax.swing.JInternalFrame();
-        jPanel18 = new javax.swing.JPanel();
-        jPanel19 = new javax.swing.JPanel();
-        jLabel110 = new javax.swing.JLabel();
-        BotaoHomeCoAluno = new javax.swing.JButton();
-        jLabel111 = new javax.swing.JLabel();
-        BotaoSalvarCoA = new javax.swing.JButton();
-        jLabel112 = new javax.swing.JLabel();
-        CampMatriculaCoA = new javax.swing.JTextField();
-        jLabel113 = new javax.swing.JLabel();
-        CampNomeCoA = new javax.swing.JTextField();
-        jLabel114 = new javax.swing.JLabel();
-        CampDataNascCoA = new javax.swing.JTextField();
-        jLabel115 = new javax.swing.JLabel();
-        CampNomeMaeCoA = new javax.swing.JTextField();
-        jLabel116 = new javax.swing.JLabel();
-        CampNomePaiCoA = new javax.swing.JTextField();
-        jLabel117 = new javax.swing.JLabel();
-        CampCapacidadeCoA = new javax.swing.JTextField();
-        CampIdadeCoA = new javax.swing.JTextField();
-        jLabel119 = new javax.swing.JLabel();
-        jLabel120 = new javax.swing.JLabel();
-        jLabel122 = new javax.swing.JLabel();
-        jLabel123 = new javax.swing.JLabel();
-        jLabel124 = new javax.swing.JLabel();
-        CampCodigo_TurmaCoA = new javax.swing.JTextField();
-        jLabel125 = new javax.swing.JLabel();
-        CampDataMatCoA = new javax.swing.JTextField();
-        BotaoPesquisaCoA = new javax.swing.JButton();
-        CampSexoCoA = new javax.swing.JTextField();
-        BotaoDeletarCoA = new javax.swing.JButton();
-        CadastarTurma = new javax.swing.JInternalFrame();
+        CampSexoProfessor = new javax.swing.JTextField();
+        CampCodigoTurmaProfessor = new javax.swing.JTextField();
+        CampMatriculaProfessor = new javax.swing.JTextField();
+        SalvaTurma1 = new javax.swing.JButton();
+        SelecionaProfessor = new javax.swing.JButton();
+        AtualizarTurma1 = new javax.swing.JButton();
+        LimparProfessor = new javax.swing.JButton();
+        ExcluirProfessor = new javax.swing.JButton();
+        ListarProfessorProfessor = new javax.swing.JButton();
+        Turma = new javax.swing.JInternalFrame();
         jPanel22 = new javax.swing.JPanel();
         jPanel23 = new javax.swing.JPanel();
         jLabel150 = new javax.swing.JLabel();
         BotaoHomeCTurma = new javax.swing.JButton();
         jLabel151 = new javax.swing.JLabel();
-        BotaoSalvarCT = new javax.swing.JButton();
         jLabel152 = new javax.swing.JLabel();
         jLabel153 = new javax.swing.JLabel();
-        CampAnoSerieCT = new javax.swing.JTextField();
+        CampAnoSerieTurma = new javax.swing.JTextField();
         jLabel154 = new javax.swing.JLabel();
-        CampTurmaCT = new javax.swing.JTextField();
+        CampTurma = new javax.swing.JTextField();
         jLabel158 = new javax.swing.JLabel();
-        CampCod_TurmaCT = new javax.swing.JTextField();
+        CampCodigoTurma = new javax.swing.JTextField();
         jLabel161 = new javax.swing.JLabel();
-        BotaoLimaprCT = new javax.swing.JButton();
         jLabel174 = new javax.swing.JLabel();
-        CampTurnoCT = new javax.swing.JTextField();
+        CampTurnoTurma = new javax.swing.JTextField();
         jLabel175 = new javax.swing.JLabel();
-        CampSalaCT = new javax.swing.JTextField();
+        CampSalaTurma = new javax.swing.JTextField();
         jLabel155 = new javax.swing.JLabel();
-        CampAnoCT = new javax.swing.JTextField();
+        CampAnoTurma = new javax.swing.JTextField();
         jLabel159 = new javax.swing.JLabel();
-        CampDisciplina1CT = new javax.swing.JTextField();
-        CampDisciplina2CT = new javax.swing.JTextField();
-        CampDisciplina3CT = new javax.swing.JTextField();
-        CampDisciplina5CT = new javax.swing.JTextField();
-        CampDisciplina4CT = new javax.swing.JTextField();
-        CampDisciplina6CT = new javax.swing.JTextField();
-        CampDisciplina7CT = new javax.swing.JTextField();
-        CampDisciplina8CT = new javax.swing.JTextField();
+        CampDisciplina1 = new javax.swing.JTextField();
+        CampDisciplina3 = new javax.swing.JTextField();
+        CampDisciplina4 = new javax.swing.JTextField();
+        CampDisciplina2 = new javax.swing.JTextField();
+        SalvaTurma = new javax.swing.JButton();
+        SelecionaTurma = new javax.swing.JButton();
+        AtualizarTurma = new javax.swing.JButton();
+        LimparTurma = new javax.swing.JButton();
+        ExcluirTurma = new javax.swing.JButton();
+        ListarTurmaTurma = new javax.swing.JButton();
         CampMatriculaCA51 = new javax.swing.JTextField();
-        CadastraProfessor1 = new javax.swing.JInternalFrame();
-        jPanel26 = new javax.swing.JPanel();
-        jPanel27 = new javax.swing.JPanel();
-        jLabel91 = new javax.swing.JLabel();
-        BotaoHomeCProf1 = new javax.swing.JButton();
-        jLabel93 = new javax.swing.JLabel();
-        BotaoDeleteCoP = new javax.swing.JButton();
-        BotaoSalvarCoP = new javax.swing.JButton();
-        jLabel97 = new javax.swing.JLabel();
-        jLabel98 = new javax.swing.JLabel();
-        campNomeCoP = new javax.swing.JTextField();
-        jLabel99 = new javax.swing.JLabel();
-        campEnderecoCoP = new javax.swing.JTextField();
-        jLabel100 = new javax.swing.JLabel();
-        jLabel101 = new javax.swing.JLabel();
-        jLabel102 = new javax.swing.JLabel();
-        jLabel103 = new javax.swing.JLabel();
-        campSexoCoP = new javax.swing.JTextField();
-        campCodigoTurmaCoP = new javax.swing.JTextField();
-        campMatricularCoP = new javax.swing.JTextField();
-        BotaoPesquisaCoP = new javax.swing.JButton();
-        ConsultarTurma = new javax.swing.JInternalFrame();
-        jPanel28 = new javax.swing.JPanel();
-        jPanel29 = new javax.swing.JPanel();
-        jLabel196 = new javax.swing.JLabel();
-        BotaoHomeCTurma1 = new javax.swing.JButton();
-        jLabel197 = new javax.swing.JLabel();
-        BotaoSalvarCoT = new javax.swing.JButton();
-        jLabel198 = new javax.swing.JLabel();
-        jLabel199 = new javax.swing.JLabel();
-        CampAnoSerieCoT = new javax.swing.JTextField();
-        jLabel200 = new javax.swing.JLabel();
-        CampTurmaCoT = new javax.swing.JTextField();
-        jLabel201 = new javax.swing.JLabel();
-        CampMatriculaCoT = new javax.swing.JTextField();
-        jLabel202 = new javax.swing.JLabel();
-        BotaoDeleteCoT = new javax.swing.JButton();
-        jLabel203 = new javax.swing.JLabel();
-        CampTurnoCoT = new javax.swing.JTextField();
-        jLabel204 = new javax.swing.JLabel();
-        CampSalaCoT = new javax.swing.JTextField();
-        jLabel205 = new javax.swing.JLabel();
-        CampAnoCoT = new javax.swing.JTextField();
-        jLabel206 = new javax.swing.JLabel();
-        CampDisciplina1CoT = new javax.swing.JTextField();
-        CampDisciplina2CoT = new javax.swing.JTextField();
-        CampDisciplina3CoT = new javax.swing.JTextField();
-        CampDisciplina5CoT = new javax.swing.JTextField();
-        CampDisciplina4CoT = new javax.swing.JTextField();
-        CampDisciplina6CoT = new javax.swing.JTextField();
-        CampDisciplina7CoT = new javax.swing.JTextField();
-        CampDisciplina8CoT = new javax.swing.JTextField();
-        BotaoPesquisarCoT = new javax.swing.JButton();
         ListarTurma = new javax.swing.JInternalFrame();
         jPanel14 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
@@ -284,7 +200,7 @@ public class Descktop extends javax.swing.JFrame {
         BotaoLimparTurmaL = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         jScrollPane4 = new javax.swing.JScrollPane();
-        Tabela1 = new javax.swing.JTable();
+        TabelaTurma = new javax.swing.JTable();
         ListarProfessor = new javax.swing.JInternalFrame();
         jPanel20 = new javax.swing.JPanel();
         jPanel21 = new javax.swing.JPanel();
@@ -296,7 +212,98 @@ public class Descktop extends javax.swing.JFrame {
         BotaoLimparrProfessorL = new javax.swing.JButton();
         jScrollPane5 = new javax.swing.JScrollPane();
         jScrollPane6 = new javax.swing.JScrollPane();
-        Tabela2 = new javax.swing.JTable();
+        TabelaProfessor = new javax.swing.JTable();
+        NotasFaltas = new javax.swing.JInternalFrame();
+        jPanel24 = new javax.swing.JPanel();
+        jPanel25 = new javax.swing.JPanel();
+        jLabel33 = new javax.swing.JLabel();
+        BotaoHomeLProfessor1 = new javax.swing.JButton();
+        jLabel50 = new javax.swing.JLabel();
+        ConsultarNotas = new javax.swing.JButton();
+        jLabel61 = new javax.swing.JLabel();
+        LimpaTabNotas = new javax.swing.JButton();
+        LimpaNotas = new javax.swing.JButton();
+        BuscarNotas = new javax.swing.JButton();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        TabelaNotasFaltas = new javax.swing.JTable();
+        CampMatriculaAlunoNota = new javax.swing.JTextField();
+        jLabel156 = new javax.swing.JLabel();
+        jLabel157 = new javax.swing.JLabel();
+        CampCodigoTurmaNota = new javax.swing.JTextField();
+        jLabel160 = new javax.swing.JLabel();
+        Disciplina1 = new javax.swing.JTextField();
+        Disciplina2 = new javax.swing.JTextField();
+        Disciplina4 = new javax.swing.JTextField();
+        Disciplina3 = new javax.swing.JTextField();
+        jLabel162 = new javax.swing.JLabel();
+        Nota11ºB = new javax.swing.JTextField();
+        Falta11ºB = new javax.swing.JTextField();
+        AdcionarNotas = new javax.swing.JButton();
+        jLabel166 = new javax.swing.JLabel();
+        jLabel167 = new javax.swing.JLabel();
+        jLabel168 = new javax.swing.JLabel();
+        Nota21ºB = new javax.swing.JTextField();
+        jLabel169 = new javax.swing.JLabel();
+        Falta21ºB = new javax.swing.JTextField();
+        Falta41ºB = new javax.swing.JTextField();
+        Nota41ºB = new javax.swing.JTextField();
+        jLabel170 = new javax.swing.JLabel();
+        jLabel171 = new javax.swing.JLabel();
+        jLabel172 = new javax.swing.JLabel();
+        Nota31ºB = new javax.swing.JTextField();
+        jLabel173 = new javax.swing.JLabel();
+        Falta31ºB = new javax.swing.JTextField();
+        jLabel176 = new javax.swing.JLabel();
+        jLabel177 = new javax.swing.JLabel();
+        Nota12ºB = new javax.swing.JTextField();
+        jLabel178 = new javax.swing.JLabel();
+        Falta12ºB = new javax.swing.JTextField();
+        jLabel179 = new javax.swing.JLabel();
+        Nota22ºB = new javax.swing.JTextField();
+        jLabel180 = new javax.swing.JLabel();
+        Falta22ºB = new javax.swing.JTextField();
+        jLabel181 = new javax.swing.JLabel();
+        Nota32ºB = new javax.swing.JTextField();
+        jLabel182 = new javax.swing.JLabel();
+        Falta32ºB = new javax.swing.JTextField();
+        jLabel183 = new javax.swing.JLabel();
+        Nota42ºB = new javax.swing.JTextField();
+        jLabel184 = new javax.swing.JLabel();
+        Falta42ºB = new javax.swing.JTextField();
+        jLabel185 = new javax.swing.JLabel();
+        jLabel186 = new javax.swing.JLabel();
+        Nota13ºB = new javax.swing.JTextField();
+        jLabel187 = new javax.swing.JLabel();
+        Falta13ºB = new javax.swing.JTextField();
+        jLabel188 = new javax.swing.JLabel();
+        Nota23ºB = new javax.swing.JTextField();
+        jLabel189 = new javax.swing.JLabel();
+        Falta23ºB = new javax.swing.JTextField();
+        jLabel190 = new javax.swing.JLabel();
+        Nota33ºB = new javax.swing.JTextField();
+        jLabel191 = new javax.swing.JLabel();
+        Falta33ºB = new javax.swing.JTextField();
+        jLabel192 = new javax.swing.JLabel();
+        Nota43ºB = new javax.swing.JTextField();
+        jLabel193 = new javax.swing.JLabel();
+        Falta43ºB = new javax.swing.JTextField();
+        jLabel194 = new javax.swing.JLabel();
+        jLabel195 = new javax.swing.JLabel();
+        Nota14ºB = new javax.swing.JTextField();
+        jLabel196 = new javax.swing.JLabel();
+        Falta14ºB = new javax.swing.JTextField();
+        jLabel197 = new javax.swing.JLabel();
+        Nota24ºB = new javax.swing.JTextField();
+        jLabel198 = new javax.swing.JLabel();
+        Falta24ºB = new javax.swing.JTextField();
+        jLabel199 = new javax.swing.JLabel();
+        Nota34ºB = new javax.swing.JTextField();
+        jLabel200 = new javax.swing.JLabel();
+        Falta34ºB = new javax.swing.JTextField();
+        jLabel201 = new javax.swing.JLabel();
+        Nota44ºB = new javax.swing.JTextField();
+        jLabel202 = new javax.swing.JLabel();
+        Falta44ºB = new javax.swing.JTextField();
 
         javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
         jDialog1.getContentPane().setLayout(jDialog1Layout);
@@ -317,6 +324,7 @@ public class Descktop extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 0, 0)));
 
         login.setBackground(new java.awt.Color(255, 255, 255));
+        login.setAlignmentX(0.3F);
         login.setVisible(true);
 
         jPanel5.setBackground(new java.awt.Color(102, 0, 0));
@@ -616,96 +624,34 @@ public class Descktop extends javax.swing.JFrame {
                 .addGap(0, 11, Short.MAX_VALUE))
         );
 
-        jLabel13.setFont(new java.awt.Font("Arial Black", 2, 18)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel13.setText("Cadastrar");
-
-        BotaoCadastrarAluno.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoCadastrarAluno.setText("Aluno");
-        BotaoCadastrarAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoCadastrarAluno.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoCadastrarAlunoActionPerformed(evt);
-            }
-        });
-
-        BotaoCadastrarProfessor.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoCadastrarProfessor.setText("Professor");
-        BotaoCadastrarProfessor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoCadastrarProfessor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoCadastrarProfessorActionPerformed(evt);
-            }
-        });
-
-        BotaoCadastrarTurma.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoCadastrarTurma.setText("Turma");
-        BotaoCadastrarTurma.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoCadastrarTurma.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoCadastrarTurmaActionPerformed(evt);
-            }
-        });
-
         jLabel14.setFont(new java.awt.Font("Arial Black", 2, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel14.setText("Consultar");
+        jLabel14.setText("SELECIONE SUA OPÇÃO");
 
-        BotaoConsultarAluno.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoConsultarAluno.setText("Aluno");
-        BotaoConsultarAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoConsultarAluno.addActionListener(new java.awt.event.ActionListener() {
+        BotaoTurma.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        BotaoTurma.setText("Turma");
+        BotaoTurma.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BotaoTurma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoConsultarAlunoActionPerformed(evt);
+                BotaoTurmaActionPerformed(evt);
             }
         });
 
-        BotaoConsultarProfessor.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoConsultarProfessor.setText("Professor");
-        BotaoConsultarProfessor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoConsultarProfessor.addActionListener(new java.awt.event.ActionListener() {
+        BotaorAluno.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        BotaorAluno.setText("Aluno");
+        BotaorAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BotaorAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoConsultarProfessorActionPerformed(evt);
+                BotaorAlunoActionPerformed(evt);
             }
         });
 
-        BotaoConsultarTurma.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoConsultarTurma.setText("Turma");
-        BotaoConsultarTurma.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoConsultarTurma.addActionListener(new java.awt.event.ActionListener() {
+        BotaoProfessor.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        BotaoProfessor.setText("Professor");
+        BotaoProfessor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BotaoProfessor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoConsultarTurmaActionPerformed(evt);
-            }
-        });
-
-        jLabel15.setFont(new java.awt.Font("Arial Black", 2, 18)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel15.setText("Listar");
-
-        BotaoListarAluno.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoListarAluno.setText("Aluno");
-        BotaoListarAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoListarAluno.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoListarAlunoActionPerformed(evt);
-            }
-        });
-
-        BotaoListarProfessor.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoListarProfessor.setText("Professor");
-        BotaoListarProfessor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoListarProfessor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoListarProfessorActionPerformed(evt);
-            }
-        });
-
-        BotaoListarTurma.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoListarTurma.setText("Turma");
-        BotaoListarTurma.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoListarTurma.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoListarTurmaActionPerformed(evt);
+                BotaoProfessorActionPerformed(evt);
             }
         });
 
@@ -715,62 +661,30 @@ public class Descktop extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addGap(53, 53, 53)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(59, 59, 59)
-                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(BotaoCadastrarTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoCadastrarProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoCadastrarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
-                        .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(BotaoConsultarTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BotaoConsultarProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BotaoConsultarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(27, 27, 27)))
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(67, 67, 67))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(BotaoListarTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BotaoListarProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BotaoListarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(42, 42, 42))))
+                .addGap(41, 41, 41)
+                .addComponent(BotaoTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                .addComponent(BotaorAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addComponent(BotaoProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(41, 41, 41))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(256, 256, 256)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BotaoConsultarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoCadastrarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoListarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BotaoConsultarProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoCadastrarProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoListarProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BotaoConsultarTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoCadastrarTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoListarTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 97, Short.MAX_VALUE))
+                    .addComponent(BotaorAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotaoTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotaoProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(200, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout homeLayout = new javax.swing.GroupLayout(home.getContentPane());
@@ -784,7 +698,7 @@ public class Descktop extends javax.swing.JFrame {
             .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        CadastarAluno.setVisible(true);
+        Aluno.setVisible(true);
 
         jPanel8.setBackground(new java.awt.Color(102, 0, 0));
 
@@ -825,24 +739,35 @@ public class Descktop extends javax.swing.JFrame {
 
         jLabel16.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel16.setText("Cadastrar Aluno");
+        jLabel16.setText("Aluno");
 
-        jButton17.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        jButton17.setText("Limpar");
-        jButton17.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        BotaoSalvaCA.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoSalvaCA.setText("Salvar");
-        BotaoSalvaCA.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoSalvaCA.addActionListener(new java.awt.event.ActionListener() {
+        SelecionaAluno.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        SelecionaAluno.setText("Selecionar");
+        SelecionaAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        SelecionaAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoSalvaCAActionPerformed(evt);
+                SelecionaAlunoActionPerformed(evt);
+            }
+        });
+
+        SalvaAluno.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        SalvaAluno.setText("Salvar");
+        SalvaAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        SalvaAluno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SalvaAlunoActionPerformed(evt);
             }
         });
 
         jLabel19.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 0));
         jLabel19.setText("Matricula");
+
+        CampMatriculaAluno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CampMatriculaAlunoActionPerformed(evt);
+            }
+        });
 
         jLabel20.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 0));
@@ -882,17 +807,71 @@ public class Descktop extends javax.swing.JFrame {
 
         jLabel31.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel31.setText("Codigo da Turma");
+        jLabel31.setText("Código da Turma");
 
-        CampCódigoTurmaCA.addActionListener(new java.awt.event.ActionListener() {
+        CampCodigoTurmaAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CampCódigoTurmaCAActionPerformed(evt);
+                CampCodigoTurmaAlunoActionPerformed(evt);
             }
         });
 
         jLabel32.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(255, 255, 0));
         jLabel32.setText("Data de Matricular");
+
+        AtualizarAluno.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        AtualizarAluno.setText("Atualizar");
+        AtualizarAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        AtualizarAluno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AtualizarAlunoActionPerformed(evt);
+            }
+        });
+
+        LimparAluno.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        LimparAluno.setText("Limpar");
+        LimparAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        LimparAluno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LimparAlunoActionPerformed(evt);
+            }
+        });
+
+        ExcluirAluno.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        ExcluirAluno.setText("Excluir");
+        ExcluirAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ExcluirAluno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExcluirAlunoActionPerformed(evt);
+            }
+        });
+
+        ListarAlunoAluno.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        ListarAlunoAluno.setText("Listar Aluno");
+        ListarAlunoAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ListarAlunoAluno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ListarAlunoAlunoActionPerformed(evt);
+            }
+        });
+
+        Historico.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        Historico.setText("Historico");
+        Historico.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Historico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HistoricoActionPerformed(evt);
+            }
+        });
+
+        EnserirNota.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        EnserirNota.setText("Notas e Faltas");
+        EnserirNota.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        EnserirNota.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EnserirNotaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -902,55 +881,65 @@ public class Descktop extends javax.swing.JFrame {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(58, 58, 58)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel8Layout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(CampNomePaiCA, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(CampNomeMãeCA, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel8Layout.createSequentialGroup()
-                            .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(BotaoSalvaCA, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel8Layout.createSequentialGroup()
-                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CampMatriculaAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CampNomeAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CampNomePaiAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CampNomeMaeAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel8Layout.createSequentialGroup()
                                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(CampMatricula, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(CampNomeCA, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel8Layout.createSequentialGroup()
-                                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel8Layout.createSequentialGroup()
-                                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(CampDataNascCA, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGap(18, 18, 18)
-                                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(CampIdadeCA, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(CampSexoCA, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(178, 178, 178)))
-                                .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(73, 73, 73)
-                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel8Layout.createSequentialGroup()
-                                    .addComponent(CampDataMatCA, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(CampCódigoTurmaCA, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel8Layout.createSequentialGroup()
-                                    .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(59, 59, 59)
-                                    .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(CampCapacidadeCA, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(120, Short.MAX_VALUE))
+                                    .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(CampDataNascAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(CampIdadeAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CampSexoAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(73, 73, 73)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(CampDataMatAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(CampCodigoTurmaAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(59, 59, 59)
+                        .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CampCapacidadeAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addComponent(SalvaAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(SelecionaAluno))
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addComponent(EnserirNota)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Historico, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(AtualizarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(LimparAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ExcluirAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(42, 42, 42))
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(ListarAlunoAluno)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -969,53 +958,62 @@ public class Descktop extends javax.swing.JFrame {
                     .addComponent(jLabel32))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(CampMatricula, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CampCódigoTurmaCA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CampDataMatCA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(CampMatriculaAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CampCodigoTurmaAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CampDataMatAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel20)
                     .addComponent(jLabel24))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(CampNomeCA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CampCapacidadeCA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(CampNomeAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CampCapacidadeAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel21)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(CampDataNascCA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(CampDataNascAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(CampIdadeCA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BotaoSalvaCA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(CampIdadeAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SalvaAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AtualizarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SelecionaAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ExcluirAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(LimparAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(2, 2, 2)
-                .addComponent(CampSexoCA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(4, 4, 4)
+                        .addComponent(CampSexoAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(EnserirNota, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Historico, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ListarAlunoAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
                 .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(CampNomePaiCA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(CampNomePaiAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel22)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(CampNomeMãeCA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addComponent(CampNomeMaeAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout CadastarAlunoLayout = new javax.swing.GroupLayout(CadastarAluno.getContentPane());
-        CadastarAluno.getContentPane().setLayout(CadastarAlunoLayout);
-        CadastarAlunoLayout.setHorizontalGroup(
-            CadastarAlunoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout AlunoLayout = new javax.swing.GroupLayout(Aluno.getContentPane());
+        Aluno.getContentPane().setLayout(AlunoLayout);
+        AlunoLayout.setHorizontalGroup(
+            AlunoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        CadastarAlunoLayout.setVerticalGroup(
-            CadastarAlunoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        AlunoLayout.setVerticalGroup(
+            AlunoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
@@ -1084,7 +1082,7 @@ public class Descktop extends javax.swing.JFrame {
             }
         });
 
-        Tabela.setModel(new javax.swing.table.DefaultTableModel(
+        TabelaAluno.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -1100,15 +1098,7 @@ public class Descktop extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jScrollPane2.setViewportView(Tabela);
-        if (Tabela.getColumnModel().getColumnCount() > 0) {
-            Tabela.getColumnModel().getColumn(4).setHeaderValue("Sexo");
-            Tabela.getColumnModel().getColumn(5).setHeaderValue("Nome Pai");
-            Tabela.getColumnModel().getColumn(6).setHeaderValue("Nome Mãe");
-            Tabela.getColumnModel().getColumn(7).setHeaderValue("Data Mat");
-            Tabela.getColumnModel().getColumn(8).setHeaderValue("Capacidade");
-            Tabela.getColumnModel().getColumn(9).setHeaderValue("Código Turmal");
-        }
+        jScrollPane2.setViewportView(TabelaAluno);
 
         jScrollPane1.setViewportView(jScrollPane2);
 
@@ -1165,7 +1155,7 @@ public class Descktop extends javax.swing.JFrame {
             .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        CadastraProfessor.setVisible(true);
+        Professor.setVisible(true);
 
         jPanel16.setBackground(new java.awt.Color(102, 0, 0));
 
@@ -1206,20 +1196,7 @@ public class Descktop extends javax.swing.JFrame {
 
         jLabel87.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
         jLabel87.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel87.setText("Cadastrar Professor");
-
-        BotaoLimparCP.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoLimparCP.setText("Limpar");
-        BotaoLimparCP.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        BotaoSalvarCP.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoSalvarCP.setText("Salvar");
-        BotaoSalvarCP.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoSalvarCP.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoSalvarCPActionPerformed(evt);
-            }
-        });
+        jLabel87.setText("Professor");
 
         jLabel88.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
         jLabel88.setForeground(new java.awt.Color(255, 255, 0));
@@ -1249,9 +1226,63 @@ public class Descktop extends javax.swing.JFrame {
         jLabel96.setForeground(new java.awt.Color(255, 255, 0));
         jLabel96.setText("Código Turma(s) ");
 
-        CampMatriculaCP.addActionListener(new java.awt.event.ActionListener() {
+        CampMatriculaProfessor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CampMatriculaCPActionPerformed(evt);
+                CampMatriculaProfessorActionPerformed(evt);
+            }
+        });
+
+        SalvaTurma1.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        SalvaTurma1.setText("Salvar");
+        SalvaTurma1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        SalvaTurma1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SalvaTurma1ActionPerformed(evt);
+            }
+        });
+
+        SelecionaProfessor.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        SelecionaProfessor.setText("Selecionar");
+        SelecionaProfessor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        SelecionaProfessor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SelecionaProfessorActionPerformed(evt);
+            }
+        });
+
+        AtualizarTurma1.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        AtualizarTurma1.setText("Atualizar");
+        AtualizarTurma1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        AtualizarTurma1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AtualizarTurma1ActionPerformed(evt);
+            }
+        });
+
+        LimparProfessor.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        LimparProfessor.setText("Limpar");
+        LimparProfessor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        LimparProfessor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LimparProfessorActionPerformed(evt);
+            }
+        });
+
+        ExcluirProfessor.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        ExcluirProfessor.setText("Excluir");
+        ExcluirProfessor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ExcluirProfessor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExcluirProfessorActionPerformed(evt);
+            }
+        });
+
+        ListarProfessorProfessor.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        ListarProfessorProfessor.setText("Listar Professor");
+        ListarProfessorProfessor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ListarProfessorProfessor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ListarProfessorProfessorActionPerformed(evt);
             }
         });
 
@@ -1263,36 +1294,49 @@ public class Descktop extends javax.swing.JFrame {
             .addGroup(jPanel16Layout.createSequentialGroup()
                 .addGap(58, 58, 58)
                 .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(CampEnderecoCP, javax.swing.GroupLayout.PREFERRED_SIZE, 497, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel89, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel88, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(CampNomeCP, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel87, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(CampMatriculaCP, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel16Layout.createSequentialGroup()
-                                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel90, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel92, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampSexoCP, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(266, 266, 266)))
-                        .addComponent(jLabel94, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(73, 73, 73)
-                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel16Layout.createSequentialGroup()
-                        .addComponent(jLabel95, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addComponent(CampEnderecoProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 497, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(73, 73, 73)
                         .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel16Layout.createSequentialGroup()
-                                .addComponent(BotaoLimparCP, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(21, 21, 21)
-                                .addComponent(BotaoSalvarCP, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel96)
-                            .addComponent(CampCodigoTurmaCP, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 33, Short.MAX_VALUE))))
+                                .addComponent(jLabel95, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel16Layout.createSequentialGroup()
+                                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel96)
+                                    .addComponent(CampCodigoTurmaProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel89, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel88, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(CampNomeProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel87, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(CampMatriculaProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel16Layout.createSequentialGroup()
+                                    .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel90, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel92, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(CampSexoProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(266, 266, 266)))
+                            .addComponent(jLabel94, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 148, Short.MAX_VALUE)
+                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(jPanel16Layout.createSequentialGroup()
+                                .addComponent(SalvaTurma1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(SelecionaProfessor)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(AtualizarTurma1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel16Layout.createSequentialGroup()
+                                .addComponent(LimparProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ListarProfessorProfessor)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(ExcluirProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(138, 138, 138))))
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1311,292 +1355,45 @@ public class Descktop extends javax.swing.JFrame {
                 .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel16Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(CampMatriculaCP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(CampMatriculaProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel89)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(CampNomeCP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BotaoSalvarCP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BotaoLimparCP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(CampNomeProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SalvaTurma1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SelecionaProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AtualizarTurma1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(CampCodigoTurmaProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel16Layout.createSequentialGroup()
                         .addComponent(jLabel90)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(CampEnderecoCP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel92, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(CampSexoCP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(CampCodigoTurmaCP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(CampEnderecoProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(ListarProfessorProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ExcluirProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(LimparProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel92, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(CampSexoProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(169, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout CadastraProfessorLayout = new javax.swing.GroupLayout(CadastraProfessor.getContentPane());
-        CadastraProfessor.getContentPane().setLayout(CadastraProfessorLayout);
-        CadastraProfessorLayout.setHorizontalGroup(
-            CadastraProfessorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout ProfessorLayout = new javax.swing.GroupLayout(Professor.getContentPane());
+        Professor.getContentPane().setLayout(ProfessorLayout);
+        ProfessorLayout.setHorizontalGroup(
+            ProfessorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
-        CadastraProfessorLayout.setVerticalGroup(
-            CadastraProfessorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        ProfessorLayout.setVerticalGroup(
+            ProfessorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        ConsultarAluno.setVisible(true);
-
-        jPanel18.setBackground(new java.awt.Color(102, 0, 0));
-
-        jPanel19.setBackground(new java.awt.Color(204, 0, 0));
-
-        jLabel110.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel110.setFont(new java.awt.Font("Arial Black", 0, 60)); // NOI18N
-        jLabel110.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel110.setText("School System");
-
-        BotaoHomeCoAluno.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoHomeCoAluno.setText("Home");
-        BotaoHomeCoAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoHomeCoAluno.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoHomeCoAlunoActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
-        jPanel19.setLayout(jPanel19Layout);
-        jPanel19Layout.setHorizontalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel19Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jLabel110)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(BotaoHomeCoAluno))
-        );
-        jPanel19Layout.setVerticalGroup(
-            jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel19Layout.createSequentialGroup()
-                .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel110, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoHomeCoAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 11, Short.MAX_VALUE))
-        );
-
-        jLabel111.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
-        jLabel111.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel111.setText("Consultar Aluno");
-
-        BotaoSalvarCoA.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoSalvarCoA.setText("Salvar");
-        BotaoSalvarCoA.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoSalvarCoA.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoSalvarCoAActionPerformed(evt);
-            }
-        });
-
-        jLabel112.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel112.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel112.setText("Matricula");
-
-        jLabel113.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel113.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel113.setText("Nome");
-
-        jLabel114.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel114.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel114.setText("Data de Nascimento");
-
-        jLabel115.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel115.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel115.setText("Nome da Mãe");
-
-        jLabel116.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel116.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel116.setText("Nome do Pai");
-
-        jLabel117.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel117.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel117.setText("Capacidade");
-
-        jLabel119.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel119.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel119.setText("Idade");
-
-        jLabel120.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel120.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel120.setText("Sexo");
-
-        jLabel122.setFont(new java.awt.Font("Century", 2, 18)); // NOI18N
-        jLabel122.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel122.setText("DADOS PESSOAIS");
-
-        jLabel123.setFont(new java.awt.Font("Century", 2, 18)); // NOI18N
-        jLabel123.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel123.setText("DADOS EDUCACIONAIS");
-
-        jLabel124.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel124.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel124.setText("Codigo da Turma");
-
-        CampCodigo_TurmaCoA.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CampCodigo_TurmaCoAActionPerformed(evt);
-            }
-        });
-
-        jLabel125.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel125.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel125.setText("Data de Matricular");
-
-        BotaoPesquisaCoA.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoPesquisaCoA.setText("Pesquisar");
-        BotaoPesquisaCoA.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoPesquisaCoA.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoPesquisaCoAActionPerformed(evt);
-            }
-        });
-
-        BotaoDeletarCoA.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoDeletarCoA.setText("Deletar");
-        BotaoDeletarCoA.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoDeletarCoA.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoDeletarCoAActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
-        jPanel18.setLayout(jPanel18Layout);
-        jPanel18Layout.setHorizontalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel18Layout.createSequentialGroup()
-                .addGap(58, 58, 58)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel18Layout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel115, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(CampNomePaiCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel18Layout.createSequentialGroup()
-                                .addComponent(CampNomeMaeCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(BotaoDeletarCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(BotaoSalvarCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(87, 87, 87))))
-                    .addGroup(jPanel18Layout.createSequentialGroup()
-                        .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel113, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel112, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel111, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampNomeCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel18Layout.createSequentialGroup()
-                                        .addComponent(CampMatriculaCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(BotaoPesquisaCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGroup(jPanel18Layout.createSequentialGroup()
-                                    .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel18Layout.createSequentialGroup()
-                                            .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jLabel114, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(CampDataNascCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGap(18, 18, 18)
-                                            .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jLabel119, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(CampIdadeCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addComponent(jLabel116, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel120, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(CampSexoCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(178, 178, 178)))
-                            .addComponent(jLabel122, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(73, 73, 73)
-                        .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel18Layout.createSequentialGroup()
-                                .addComponent(CampDataMatCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(CampCodigo_TurmaCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel18Layout.createSequentialGroup()
-                                .addComponent(jLabel125, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(59, 59, 59)
-                                .addComponent(jLabel124, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel123, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel117, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(CampCapacidadeCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 256, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(84, Short.MAX_VALUE))
-        );
-        jPanel18Layout.setVerticalGroup(
-            jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel18Layout.createSequentialGroup()
-                .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addComponent(jLabel111, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel122, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel123, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(2, 2, 2)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel112, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel124)
-                    .addComponent(jLabel125))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(CampCodigo_TurmaCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CampDataMatCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CampMatriculaCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoPesquisaCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel113)
-                    .addComponent(jLabel117))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(CampNomeCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CampCapacidadeCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel18Layout.createSequentialGroup()
-                        .addComponent(jLabel114)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(CampDataNascCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel18Layout.createSequentialGroup()
-                        .addComponent(jLabel119, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(CampIdadeCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel120, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(CampSexoCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel116, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(CampNomePaiCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel115)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(CampNomeMaeCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoSalvarCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoDeletarCoA, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(74, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout ConsultarAlunoLayout = new javax.swing.GroupLayout(ConsultarAluno.getContentPane());
-        ConsultarAluno.getContentPane().setLayout(ConsultarAlunoLayout);
-        ConsultarAlunoLayout.setHorizontalGroup(
-            ConsultarAlunoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        ConsultarAlunoLayout.setVerticalGroup(
-            ConsultarAlunoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-
-        CadastarTurma.setVisible(true);
+        Turma.setVisible(true);
 
         jPanel22.setBackground(new java.awt.Color(102, 0, 0));
 
@@ -1637,16 +1434,7 @@ public class Descktop extends javax.swing.JFrame {
 
         jLabel151.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
         jLabel151.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel151.setText("Cadastrar Turma");
-
-        BotaoSalvarCT.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoSalvarCT.setText("Salvar");
-        BotaoSalvarCT.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoSalvarCT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoSalvarCTActionPerformed(evt);
-            }
-        });
+        jLabel151.setText("Turma");
 
         jLabel152.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
         jLabel152.setForeground(new java.awt.Color(255, 255, 0));
@@ -1664,13 +1452,15 @@ public class Descktop extends javax.swing.JFrame {
         jLabel158.setForeground(new java.awt.Color(255, 255, 255));
         jLabel158.setText("DADOS DA TURMA");
 
+        CampCodigoTurma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CampCodigoTurmaActionPerformed(evt);
+            }
+        });
+
         jLabel161.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
         jLabel161.setForeground(new java.awt.Color(255, 255, 0));
         jLabel161.setText("Disciplina(s)");
-
-        BotaoLimaprCT.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoLimaprCT.setText("Limpar");
-        BotaoLimaprCT.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel174.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
         jLabel174.setForeground(new java.awt.Color(255, 255, 0));
@@ -1688,137 +1478,186 @@ public class Descktop extends javax.swing.JFrame {
         jLabel159.setForeground(new java.awt.Color(255, 255, 255));
         jLabel159.setText("DADOS DA TURMA");
 
+        SalvaTurma.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        SalvaTurma.setText("Salvar");
+        SalvaTurma.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        SalvaTurma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SalvaTurmaActionPerformed(evt);
+            }
+        });
+
+        SelecionaTurma.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        SelecionaTurma.setText("Selecionar");
+        SelecionaTurma.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        SelecionaTurma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SelecionaTurmaActionPerformed(evt);
+            }
+        });
+
+        AtualizarTurma.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        AtualizarTurma.setText("Atualizar");
+        AtualizarTurma.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        AtualizarTurma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AtualizarTurmaActionPerformed(evt);
+            }
+        });
+
+        LimparTurma.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        LimparTurma.setText("Limpar");
+        LimparTurma.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        LimparTurma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LimparTurmaActionPerformed(evt);
+            }
+        });
+
+        ExcluirTurma.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        ExcluirTurma.setText("Excluir");
+        ExcluirTurma.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ExcluirTurma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ExcluirTurmaActionPerformed(evt);
+            }
+        });
+
+        ListarTurmaTurma.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        ListarTurmaTurma.setText("Listar Turma");
+        ListarTurmaTurma.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ListarTurmaTurma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ListarTurmaTurmaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
         jPanel22.setLayout(jPanel22Layout);
         jPanel22Layout.setHorizontalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel22Layout.createSequentialGroup()
+                .addGap(58, 58, 58)
+                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel159, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel22Layout.createSequentialGroup()
+                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(CampTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel154, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel153, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CampAnoSerieTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CampAnoTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel155, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel152, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CampCodigoTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(23, 23, 23)
+                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel175, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CampSalaTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CampTurnoTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel174, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel151, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel22Layout.createSequentialGroup()
-                        .addGap(58, 58, 58)
-                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel159, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(ListarTurmaTurma)
                             .addGroup(jPanel22Layout.createSequentialGroup()
-                                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(CampTurmaCT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel154, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel153, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampAnoSerieCT, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampAnoCT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel155, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel152, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampCod_TurmaCT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(23, 23, 23)
-                                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel175, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampSalaCT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampTurnoCT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel174, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jLabel151, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(104, 104, 104)
-                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel161)
-                            .addComponent(jLabel158, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel22Layout.createSequentialGroup()
-                                .addComponent(CampDisciplina1CT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(CampDisciplina5CT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel22Layout.createSequentialGroup()
-                                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(CampDisciplina4CT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(CampDisciplina3CT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(CampDisciplina2CT, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(CampDisciplina8CT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampDisciplina6CT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampDisciplina7CT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(SalvaTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(SelecionaTurma)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(AtualizarTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(LimparTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ExcluirTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel22Layout.createSequentialGroup()
-                        .addGap(472, 472, 472)
-                        .addComponent(BotaoLimaprCT, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(BotaoSalvarCT, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 285, Short.MAX_VALUE))
+                        .addGap(104, 104, 104)
+                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel22Layout.createSequentialGroup()
+                                .addComponent(CampDisciplina2, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(CampDisciplina4, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel161)
+                                .addComponent(jLabel158, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel22Layout.createSequentialGroup()
+                                    .addComponent(CampDisciplina1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(CampDisciplina3, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                .addGap(0, 113, Short.MAX_VALUE))
         );
         jPanel22Layout.setVerticalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel22Layout.createSequentialGroup()
                 .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addComponent(jLabel151, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel159, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel158, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(2, 2, 2)
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel22Layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(jLabel151, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel152, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(4, 4, 4)
+                        .addComponent(CampCodigoTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel153)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(CampAnoSerieTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel154)
+                            .addComponent(jLabel174))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(CampTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CampTurnoTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel159, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel158, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(2, 2, 2)
-                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel22Layout.createSequentialGroup()
-                                .addComponent(jLabel161, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(CampDisciplina1CT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampDisciplina5CT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel22Layout.createSequentialGroup()
-                                        .addGap(82, 82, 82)
-                                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(CampDisciplina8CT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(CampDisciplina4CT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(jPanel22Layout.createSequentialGroup()
-                                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(CampDisciplina2CT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(CampDisciplina6CT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(CampDisciplina3CT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(CampDisciplina7CT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                            .addGroup(jPanel22Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(jLabel152, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(4, 4, 4)
-                                .addComponent(CampCod_TurmaCT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel153)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(CampAnoSerieCT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel154)
-                                    .addComponent(jLabel174))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(CampTurmaCT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampTurnoCT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel155)
-                                    .addComponent(jLabel175))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(CampAnoCT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampSalaCT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addContainerGap(159, Short.MAX_VALUE))
-                    .addGroup(jPanel22Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel155)
+                            .addComponent(jLabel175))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(BotaoSalvarCT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BotaoLimaprCT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(33, 33, 33))))
+                            .addComponent(CampAnoTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CampSalaTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel22Layout.createSequentialGroup()
+                        .addComponent(jLabel161, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(CampDisciplina1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CampDisciplina3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(CampDisciplina4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CampDisciplina2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
+                        .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SalvaTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SelecionaTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AtualizarTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ExcluirTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(LimparTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(ListarTurmaTurma, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(141, 141, 141))))
         );
 
-        javax.swing.GroupLayout CadastarTurmaLayout = new javax.swing.GroupLayout(CadastarTurma.getContentPane());
-        CadastarTurma.getContentPane().setLayout(CadastarTurmaLayout);
-        CadastarTurmaLayout.setHorizontalGroup(
-            CadastarTurmaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout TurmaLayout = new javax.swing.GroupLayout(Turma.getContentPane());
+        Turma.getContentPane().setLayout(TurmaLayout);
+        TurmaLayout.setHorizontalGroup(
+            TurmaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
-        CadastarTurmaLayout.setVerticalGroup(
-            CadastarTurmaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        TurmaLayout.setVerticalGroup(
+            TurmaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         CampMatriculaCA51.addActionListener(new java.awt.event.ActionListener() {
@@ -1826,428 +1665,6 @@ public class Descktop extends javax.swing.JFrame {
                 CampMatriculaCA51ActionPerformed(evt);
             }
         });
-
-        CadastraProfessor1.setVisible(true);
-
-        jPanel26.setBackground(new java.awt.Color(102, 0, 0));
-
-        jPanel27.setBackground(new java.awt.Color(204, 0, 0));
-
-        jLabel91.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel91.setFont(new java.awt.Font("Arial Black", 0, 60)); // NOI18N
-        jLabel91.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel91.setText("School System");
-
-        BotaoHomeCProf1.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoHomeCProf1.setText("Home");
-        BotaoHomeCProf1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoHomeCProf1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoHomeCProf1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel27Layout = new javax.swing.GroupLayout(jPanel27);
-        jPanel27.setLayout(jPanel27Layout);
-        jPanel27Layout.setHorizontalGroup(
-            jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel27Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jLabel91)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(BotaoHomeCProf1))
-        );
-        jPanel27Layout.setVerticalGroup(
-            jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel27Layout.createSequentialGroup()
-                .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel91, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoHomeCProf1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 11, Short.MAX_VALUE))
-        );
-
-        jLabel93.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
-        jLabel93.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel93.setText("Consultar Professor");
-
-        BotaoDeleteCoP.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoDeleteCoP.setText("Delete");
-        BotaoDeleteCoP.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        BotaoSalvarCoP.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoSalvarCoP.setText("Salvar");
-        BotaoSalvarCoP.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        jLabel97.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel97.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel97.setText("Matricula");
-
-        jLabel98.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel98.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel98.setText("Nome");
-
-        campNomeCoP.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campNomeCoPActionPerformed(evt);
-            }
-        });
-
-        jLabel99.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel99.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel99.setText("Endereço");
-
-        jLabel100.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel100.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel100.setText("Sexo");
-
-        jLabel101.setFont(new java.awt.Font("Century", 2, 18)); // NOI18N
-        jLabel101.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel101.setText("DADOS PESSOAIS");
-
-        jLabel102.setFont(new java.awt.Font("Century", 2, 18)); // NOI18N
-        jLabel102.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel102.setText("DADOS EDUCACIONAIS");
-
-        jLabel103.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel103.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel103.setText("Código Turma(s) ");
-
-        BotaoPesquisaCoP.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoPesquisaCoP.setText("Pesquisar");
-        BotaoPesquisaCoP.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoPesquisaCoP.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoPesquisaCoPActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
-        jPanel26.setLayout(jPanel26Layout);
-        jPanel26Layout.setHorizontalGroup(
-            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel26Layout.createSequentialGroup()
-                .addGap(58, 58, 58)
-                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(campEnderecoCoP, javax.swing.GroupLayout.PREFERRED_SIZE, 497, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel98, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel97, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(campNomeCoP, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel93, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jPanel26Layout.createSequentialGroup()
-                                    .addComponent(campMatricularCoP, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(BotaoPesquisaCoP, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel26Layout.createSequentialGroup()
-                                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel99, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel100, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(campSexoCoP, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(266, 266, 266)))
-                        .addComponent(jLabel101, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(73, 73, 73)
-                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel26Layout.createSequentialGroup()
-                        .addComponent(jLabel102, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel26Layout.createSequentialGroup()
-                        .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel26Layout.createSequentialGroup()
-                                .addComponent(BotaoDeleteCoP, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(21, 21, 21)
-                                .addComponent(BotaoSalvarCoP, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel103)
-                            .addComponent(campCodigoTurmaCoP, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 33, Short.MAX_VALUE))))
-        );
-        jPanel26Layout.setVerticalGroup(
-            jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel26Layout.createSequentialGroup()
-                .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addComponent(jLabel93, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel101, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel102, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(2, 2, 2)
-                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel97, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel103, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel26Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(campMatricularCoP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BotaoPesquisaCoP))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel98)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(campNomeCoP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BotaoSalvarCoP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BotaoDeleteCoP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel99)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(campEnderecoCoP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel100, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(campSexoCoP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(campCodigoTurmaCoP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(32, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout CadastraProfessor1Layout = new javax.swing.GroupLayout(CadastraProfessor1.getContentPane());
-        CadastraProfessor1.getContentPane().setLayout(CadastraProfessor1Layout);
-        CadastraProfessor1Layout.setHorizontalGroup(
-            CadastraProfessor1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        CadastraProfessor1Layout.setVerticalGroup(
-            CadastraProfessor1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-
-        ConsultarTurma.setVisible(true);
-
-        jPanel28.setBackground(new java.awt.Color(102, 0, 0));
-
-        jPanel29.setBackground(new java.awt.Color(204, 0, 0));
-
-        jLabel196.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel196.setFont(new java.awt.Font("Arial Black", 0, 60)); // NOI18N
-        jLabel196.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel196.setText("School System");
-
-        BotaoHomeCTurma1.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoHomeCTurma1.setText("Home");
-        BotaoHomeCTurma1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoHomeCTurma1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoHomeCTurma1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel29Layout = new javax.swing.GroupLayout(jPanel29);
-        jPanel29.setLayout(jPanel29Layout);
-        jPanel29Layout.setHorizontalGroup(
-            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel29Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jLabel196)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(BotaoHomeCTurma1))
-        );
-        jPanel29Layout.setVerticalGroup(
-            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel29Layout.createSequentialGroup()
-                .addGroup(jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel196, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BotaoHomeCTurma1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 11, Short.MAX_VALUE))
-        );
-
-        jLabel197.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
-        jLabel197.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel197.setText("Consultar Turma");
-
-        BotaoSalvarCoT.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoSalvarCoT.setText("Salvar");
-        BotaoSalvarCoT.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        jLabel198.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel198.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel198.setText("Código Turma");
-
-        jLabel199.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel199.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel199.setText("Ano/Nível");
-
-        jLabel200.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel200.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel200.setText("Turma");
-
-        jLabel201.setFont(new java.awt.Font("Century", 2, 18)); // NOI18N
-        jLabel201.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel201.setText("DADOS DA TURMA");
-
-        jLabel202.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel202.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel202.setText("Disciplina(s)");
-
-        BotaoDeleteCoT.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoDeleteCoT.setText("Deletar");
-        BotaoDeleteCoT.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        jLabel203.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel203.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel203.setText("Turno");
-
-        jLabel204.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel204.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel204.setText("Sala");
-
-        jLabel205.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
-        jLabel205.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel205.setText("Ano");
-
-        jLabel206.setFont(new java.awt.Font("Century", 2, 18)); // NOI18N
-        jLabel206.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel206.setText("DADOS DA TURMA");
-
-        BotaoPesquisarCoT.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        BotaoPesquisarCoT.setText("Pesquisar");
-        BotaoPesquisarCoT.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BotaoPesquisarCoT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotaoPesquisarCoTActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel28Layout = new javax.swing.GroupLayout(jPanel28);
-        jPanel28.setLayout(jPanel28Layout);
-        jPanel28Layout.setHorizontalGroup(
-            jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel29, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel28Layout.createSequentialGroup()
-                .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel28Layout.createSequentialGroup()
-                        .addGap(58, 58, 58)
-                        .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel206, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel28Layout.createSequentialGroup()
-                                .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(CampTurmaCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel200, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel199, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampAnoSerieCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampAnoCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel205, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel198, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampMatriculaCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel28Layout.createSequentialGroup()
-                                        .addGap(23, 23, 23)
-                                        .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel204, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(CampSalaCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(CampTurnoCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel203, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(jPanel28Layout.createSequentialGroup()
-                                        .addGap(18, 18, 18)
-                                        .addComponent(BotaoPesquisarCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addComponent(jLabel197, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(104, 104, 104)
-                        .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel202)
-                            .addComponent(jLabel201, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel28Layout.createSequentialGroup()
-                                .addComponent(CampDisciplina1CoT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(CampDisciplina5CoT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel28Layout.createSequentialGroup()
-                                .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(CampDisciplina4CoT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(CampDisciplina3CoT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(CampDisciplina2CoT, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(CampDisciplina8CoT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampDisciplina6CoT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampDisciplina7CoT, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(jPanel28Layout.createSequentialGroup()
-                        .addGap(472, 472, 472)
-                        .addComponent(BotaoDeleteCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(BotaoSalvarCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 285, Short.MAX_VALUE))
-        );
-        jPanel28Layout.setVerticalGroup(
-            jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel28Layout.createSequentialGroup()
-                .addComponent(jPanel29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel28Layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(jLabel197, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel206, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel201, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(2, 2, 2)
-                        .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel28Layout.createSequentialGroup()
-                                .addComponent(jLabel202, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(CampDisciplina1CoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampDisciplina5CoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel28Layout.createSequentialGroup()
-                                        .addGap(82, 82, 82)
-                                        .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(CampDisciplina8CoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(CampDisciplina4CoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(jPanel28Layout.createSequentialGroup()
-                                        .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(CampDisciplina2CoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(CampDisciplina6CoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(CampDisciplina3CoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(CampDisciplina7CoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                            .addGroup(jPanel28Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(jLabel198, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(2, 2, 2)
-                                .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(CampMatriculaCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(BotaoPesquisarCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel199)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(CampAnoSerieCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel200)
-                                    .addComponent(jLabel203))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(CampTurmaCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampTurnoCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel205)
-                                    .addComponent(jLabel204))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(CampAnoCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(CampSalaCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addContainerGap(159, Short.MAX_VALUE))
-                    .addGroup(jPanel28Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(BotaoSalvarCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BotaoDeleteCoT, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(33, 33, 33))))
-        );
-
-        javax.swing.GroupLayout ConsultarTurmaLayout = new javax.swing.GroupLayout(ConsultarTurma.getContentPane());
-        ConsultarTurma.getContentPane().setLayout(ConsultarTurmaLayout);
-        ConsultarTurmaLayout.setHorizontalGroup(
-            ConsultarTurmaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        ConsultarTurmaLayout.setVerticalGroup(
-            ConsultarTurmaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
 
         ListarTurma.setVisible(true);
 
@@ -2314,7 +1731,7 @@ public class Descktop extends javax.swing.JFrame {
             }
         });
 
-        Tabela1.setModel(new javax.swing.table.DefaultTableModel(
+        TabelaTurma.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -2330,14 +1747,14 @@ public class Descktop extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jScrollPane4.setViewportView(Tabela1);
-        if (Tabela1.getColumnModel().getColumnCount() > 0) {
-            Tabela1.getColumnModel().getColumn(4).setHeaderValue("Sexo");
-            Tabela1.getColumnModel().getColumn(5).setHeaderValue("Nome Pai");
-            Tabela1.getColumnModel().getColumn(6).setHeaderValue("Nome Mãe");
-            Tabela1.getColumnModel().getColumn(7).setHeaderValue("Data Mat");
-            Tabela1.getColumnModel().getColumn(8).setHeaderValue("Capacidade");
-            Tabela1.getColumnModel().getColumn(9).setHeaderValue("Código Turmal");
+        jScrollPane4.setViewportView(TabelaTurma);
+        if (TabelaTurma.getColumnModel().getColumnCount() > 0) {
+            TabelaTurma.getColumnModel().getColumn(4).setHeaderValue("Sexo");
+            TabelaTurma.getColumnModel().getColumn(5).setHeaderValue("Nome Pai");
+            TabelaTurma.getColumnModel().getColumn(6).setHeaderValue("Nome Mãe");
+            TabelaTurma.getColumnModel().getColumn(7).setHeaderValue("Data Mat");
+            TabelaTurma.getColumnModel().getColumn(8).setHeaderValue("Capacidade");
+            TabelaTurma.getColumnModel().getColumn(9).setHeaderValue("Código Turmal");
         }
 
         jScrollPane3.setViewportView(jScrollPane4);
@@ -2392,9 +1809,7 @@ public class Descktop extends javax.swing.JFrame {
         );
         ListarTurmaLayout.setVerticalGroup(
             ListarTurmaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ListarTurmaLayout.createSequentialGroup()
-                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         ListarProfessor.setVisible(true);
@@ -2462,7 +1877,7 @@ public class Descktop extends javax.swing.JFrame {
             }
         });
 
-        Tabela2.setModel(new javax.swing.table.DefaultTableModel(
+        TabelaProfessor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -2478,7 +1893,7 @@ public class Descktop extends javax.swing.JFrame {
                 return types [columnIndex];
             }
         });
-        jScrollPane6.setViewportView(Tabela2);
+        jScrollPane6.setViewportView(TabelaProfessor);
 
         jScrollPane5.setViewportView(jScrollPane6);
 
@@ -2532,9 +1947,630 @@ public class Descktop extends javax.swing.JFrame {
         );
         ListarProfessorLayout.setVerticalGroup(
             ListarProfessorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ListarProfessorLayout.createSequentialGroup()
-                .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 24, Short.MAX_VALUE))
+            .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        NotasFaltas.setVisible(true);
+
+        jPanel24.setBackground(new java.awt.Color(102, 0, 0));
+
+        jPanel25.setBackground(new java.awt.Color(204, 0, 0));
+
+        jLabel33.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel33.setFont(new java.awt.Font("Arial Black", 0, 60)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel33.setText("School System");
+
+        BotaoHomeLProfessor1.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        BotaoHomeLProfessor1.setText("Home");
+        BotaoHomeLProfessor1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BotaoHomeLProfessor1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoHomeLProfessor1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
+        jPanel25.setLayout(jPanel25Layout);
+        jPanel25Layout.setHorizontalGroup(
+            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel25Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(jLabel33)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(BotaoHomeLProfessor1))
+        );
+        jPanel25Layout.setVerticalGroup(
+            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel25Layout.createSequentialGroup()
+                .addGroup(jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotaoHomeLProfessor1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 11, Short.MAX_VALUE))
+        );
+
+        jLabel50.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel50.setText("Notas e Faltas");
+
+        ConsultarNotas.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        ConsultarNotas.setText("CONSULTAR");
+        ConsultarNotas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ConsultarNotas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ConsultarNotasActionPerformed(evt);
+            }
+        });
+
+        jLabel61.setFont(new java.awt.Font("Century", 2, 18)); // NOI18N
+        jLabel61.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel61.setText("OPÇÕES");
+
+        LimpaTabNotas.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        LimpaTabNotas.setText("LIMPAR");
+        LimpaTabNotas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        LimpaTabNotas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LimpaTabNotasActionPerformed(evt);
+            }
+        });
+
+        LimpaNotas.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        LimpaNotas.setText("LIMPAR");
+        LimpaNotas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        LimpaNotas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LimpaNotasActionPerformed(evt);
+            }
+        });
+
+        BuscarNotas.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        BuscarNotas.setText("BUSCAR");
+        BuscarNotas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BuscarNotas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BuscarNotasActionPerformed(evt);
+            }
+        });
+
+        TabelaNotasFaltas.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Disciplinas", "Notas 1ºB", "Faltas 1ºB", "Notas 2ºB", "Faltas 2ºB", "Notas 3ºB", "Faltas 3ºB", "Notas 4ºB", "Faltas 4ºB"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jScrollPane8.setViewportView(TabelaNotasFaltas);
+
+        jLabel156.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel156.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel156.setText("Código Aluno");
+
+        jLabel157.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel157.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel157.setText("Código Turma");
+
+        jLabel160.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel160.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel160.setText("DISCIPLINAS");
+
+        jLabel162.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel162.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel162.setText("1º BIMESTRE");
+
+        AdcionarNotas.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        AdcionarNotas.setText("ADICIONAR");
+        AdcionarNotas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        AdcionarNotas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AdcionarNotasActionPerformed(evt);
+            }
+        });
+
+        jLabel166.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel166.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel166.setText("N");
+
+        jLabel167.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel167.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel167.setText("F");
+
+        jLabel168.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel168.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel168.setText("N");
+
+        jLabel169.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel169.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel169.setText("F");
+
+        jLabel170.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel170.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel170.setText("N");
+
+        jLabel171.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel171.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel171.setText("F");
+
+        jLabel172.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel172.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel172.setText("N");
+
+        jLabel173.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel173.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel173.setText("F");
+
+        jLabel176.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel176.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel176.setText("2º BIMESTRE");
+
+        jLabel177.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel177.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel177.setText("N");
+
+        jLabel178.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel178.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel178.setText("F");
+
+        jLabel179.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel179.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel179.setText("N");
+
+        jLabel180.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel180.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel180.setText("F");
+
+        jLabel181.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel181.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel181.setText("N");
+
+        jLabel182.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel182.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel182.setText("F");
+
+        jLabel183.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel183.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel183.setText("N");
+
+        jLabel184.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel184.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel184.setText("F");
+
+        jLabel185.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel185.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel185.setText("3º BIMESTRE");
+
+        jLabel186.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel186.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel186.setText("N");
+
+        jLabel187.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel187.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel187.setText("F");
+
+        jLabel188.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel188.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel188.setText("N");
+
+        jLabel189.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel189.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel189.setText("F");
+
+        jLabel190.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel190.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel190.setText("N");
+
+        jLabel191.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel191.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel191.setText("F");
+
+        jLabel192.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel192.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel192.setText("N");
+
+        jLabel193.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel193.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel193.setText("F");
+
+        jLabel194.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel194.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel194.setText("4º BIMESTRE");
+
+        jLabel195.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel195.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel195.setText("N");
+
+        jLabel196.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel196.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel196.setText("F");
+
+        jLabel197.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel197.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel197.setText("N");
+
+        jLabel198.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel198.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel198.setText("F");
+
+        jLabel199.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel199.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel199.setText("N");
+
+        jLabel200.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel200.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel200.setText("F");
+
+        jLabel201.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel201.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel201.setText("N");
+
+        jLabel202.setFont(new java.awt.Font("Arial", 2, 18)); // NOI18N
+        jLabel202.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel202.setText("F");
+
+        javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
+        jPanel24.setLayout(jPanel24Layout);
+        jPanel24Layout.setHorizontalGroup(
+            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel24Layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 855, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel24Layout.createSequentialGroup()
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(Disciplina3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Disciplina4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Disciplina2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Disciplina1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel160))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel24Layout.createSequentialGroup()
+                                        .addComponent(jLabel170)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(Nota41ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jLabel171)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(Falta41ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel24Layout.createSequentialGroup()
+                                        .addComponent(jLabel172)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(Nota31ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jLabel173)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(Falta31ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jPanel24Layout.createSequentialGroup()
+                                    .addComponent(jLabel168)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Nota21ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jLabel169)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(Falta21ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel24Layout.createSequentialGroup()
+                                .addComponent(jLabel166)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel162)
+                                    .addGroup(jPanel24Layout.createSequentialGroup()
+                                        .addComponent(Nota11ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jLabel167)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(Falta11ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel24Layout.createSequentialGroup()
+                                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel24Layout.createSequentialGroup()
+                                                .addComponent(jLabel183)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(Nota42ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jLabel184)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(Falta42ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(jPanel24Layout.createSequentialGroup()
+                                                .addComponent(jLabel181)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(Nota32ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jLabel182)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(Falta32ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGroup(jPanel24Layout.createSequentialGroup()
+                                            .addComponent(jLabel179)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(Nota22ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(jLabel180)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(Falta22ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(jPanel24Layout.createSequentialGroup()
+                                        .addComponent(jLabel177)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel176)
+                                            .addGroup(jPanel24Layout.createSequentialGroup()
+                                                .addComponent(Nota12ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jLabel178)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(Falta12ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel24Layout.createSequentialGroup()
+                                                .addComponent(jLabel190)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(Nota33ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jLabel191)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(Falta33ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(jPanel24Layout.createSequentialGroup()
+                                                .addComponent(jLabel192)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(Nota43ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jLabel193)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(Falta43ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGroup(jPanel24Layout.createSequentialGroup()
+                                            .addComponent(jLabel188)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(Nota23ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(jLabel189)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(Falta23ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(jPanel24Layout.createSequentialGroup()
+                                        .addComponent(jLabel186)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel185)
+                                            .addGroup(jPanel24Layout.createSequentialGroup()
+                                                .addComponent(Nota13ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jLabel187)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(Falta13ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel24Layout.createSequentialGroup()
+                                                .addComponent(jLabel199)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(Nota34ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jLabel200)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(Falta34ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(jPanel24Layout.createSequentialGroup()
+                                                .addComponent(jLabel201)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(Nota44ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jLabel202)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(Falta44ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGroup(jPanel24Layout.createSequentialGroup()
+                                            .addComponent(jLabel197)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(Nota24ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(jLabel198)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(Falta24ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(jPanel24Layout.createSequentialGroup()
+                                        .addComponent(jLabel195)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel194)
+                                            .addGroup(jPanel24Layout.createSequentialGroup()
+                                                .addComponent(Nota14ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(jLabel196)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(Falta14ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                            .addGroup(jPanel24Layout.createSequentialGroup()
+                                .addComponent(ConsultarNotas)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(LimpaTabNotas))))
+                    .addGroup(jPanel24Layout.createSequentialGroup()
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel24Layout.createSequentialGroup()
+                                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel156)
+                                    .addComponent(CampMatriculaAlunoNota, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel157)
+                                    .addComponent(CampCodigoTurmaNota, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(BuscarNotas, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel24Layout.createSequentialGroup()
+                                .addComponent(LimpaNotas)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(AdcionarNotas))
+                            .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(44, Short.MAX_VALUE))
+        );
+        jPanel24Layout.setVerticalGroup(
+            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel24Layout.createSequentialGroup()
+                .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel24Layout.createSequentialGroup()
+                        .addComponent(jLabel50, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel156)
+                            .addGroup(jPanel24Layout.createSequentialGroup()
+                                .addComponent(jLabel157)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(CampCodigoTurmaNota, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(CampMatriculaAlunoNota, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(jPanel24Layout.createSequentialGroup()
+                        .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(BuscarNotas, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(LimpaNotas, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AdcionarNotas, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(20, 20, 20)
+                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel24Layout.createSequentialGroup()
+                        .addComponent(jLabel176)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota12ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta12ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel178)
+                            .addComponent(jLabel177))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota22ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta22ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel180)
+                            .addComponent(jLabel179))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota32ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta32ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel182)
+                            .addComponent(jLabel181))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota42ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta42ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel184)
+                            .addComponent(jLabel183)))
+                    .addGroup(jPanel24Layout.createSequentialGroup()
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel162)
+                            .addComponent(jLabel160))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota11ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta11ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel167)
+                            .addComponent(jLabel166)
+                            .addComponent(Disciplina1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota21ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta21ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel169)
+                            .addComponent(jLabel168)
+                            .addComponent(Disciplina2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota31ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta31ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel173)
+                            .addComponent(jLabel172)
+                            .addComponent(Disciplina3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota41ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta41ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel171)
+                            .addComponent(jLabel170)
+                            .addComponent(Disciplina4, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel24Layout.createSequentialGroup()
+                        .addComponent(jLabel185)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota13ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta13ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel187)
+                            .addComponent(jLabel186))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota23ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta23ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel189)
+                            .addComponent(jLabel188))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota33ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta33ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel191)
+                            .addComponent(jLabel190))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota43ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta43ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel193)
+                            .addComponent(jLabel192)))
+                    .addGroup(jPanel24Layout.createSequentialGroup()
+                        .addComponent(jLabel194)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota14ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta14ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel196)
+                            .addComponent(jLabel195))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota24ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta24ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel198)
+                            .addComponent(jLabel197))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota34ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta34ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel200)
+                            .addComponent(jLabel199))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Nota44ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Falta44ºB, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel202)
+                            .addComponent(jLabel201))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ConsultarNotas, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LimpaTabNotas, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout NotasFaltasLayout = new javax.swing.GroupLayout(NotasFaltas.getContentPane());
+        NotasFaltas.getContentPane().setLayout(NotasFaltasLayout);
+        NotasFaltasLayout.setHorizontalGroup(
+            NotasFaltasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        NotasFaltasLayout.setVerticalGroup(
+            NotasFaltasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -2549,29 +2585,25 @@ public class Descktop extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(home, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(CadastarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Aluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Professor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ConsultarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(CadastraProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(CadastraProfessor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(CadastarTurma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ConsultarTurma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(Turma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ListarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(ListarTurma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(ListarProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(9758, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(NotasFaltas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(12497, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(5635, 5635, 5635)
                     .addComponent(CampMatriculaCA51, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(16459, Short.MAX_VALUE)))
+                    .addContainerGap(16659, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2588,23 +2620,20 @@ public class Descktop extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(CadastarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(CadastarTurma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ConsultarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ConsultarTurma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ListarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ListarProfessor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ListarTurma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(NotasFaltas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Turma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(CadastraProfessor, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(CadastraProfessor1, javax.swing.GroupLayout.Alignment.LEADING))
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(ListarProfessor, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(ListarTurma, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(ListarAluno, javax.swing.GroupLayout.Alignment.LEADING)))))
-                .addContainerGap(3360, Short.MAX_VALUE))
+                                .addComponent(Aluno, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(Professor, javax.swing.GroupLayout.Alignment.LEADING)))))
+                .addContainerGap(3564, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(1149, 1149, 1149)
                     .addComponent(CampMatriculaCA51, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(3019, Short.MAX_VALUE)))
+                    .addContainerGap(3221, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
@@ -2625,7 +2654,7 @@ public class Descktop extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 642, Short.MAX_VALUE))
+                .addGap(0, 490, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2665,7 +2694,7 @@ public class Descktop extends javax.swing.JFrame {
                 home.setVisible(true);
                 login.setVisible(false);
             } else {
-                JOptionPane.showMessageDialog(null, "Cadastre-se para Logar");
+                JOptionPane.showMessageDialog(null, "Usuario não encontrado");
                 login.setVisible(true);
                 home.setVisible(false);
             }
@@ -2675,11 +2704,10 @@ public class Descktop extends javax.swing.JFrame {
         } finally {
             try {
 
-           
                 if (conn != null) {
- 
+
                     conn.close();
-                    
+
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -2692,17 +2720,15 @@ public class Descktop extends javax.swing.JFrame {
 
     private void BotaoCadastrarLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoCadastrarLoginActionPerformed
         login.setVisible(false);
-        cadastroUsuario.setVisible(true);
-        home.setVisible(false);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
+        cadastroUsuario.setVisible(false);
+        home.setVisible(true);
+        Aluno.setVisible(false);
+        Professor.setVisible(false);
+        Turma.setVisible(false);
         ListarAluno.setVisible(false);
         ListarProfessor.setVisible(false);
         ListarTurma.setVisible(false);
+        NotasFaltas.setVisible(false);
     }//GEN-LAST:event_BotaoCadastrarLoginActionPerformed
 
     private void BotaoSalvaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSalvaActionPerformed
@@ -2757,15 +2783,13 @@ public class Descktop extends javax.swing.JFrame {
         login.setVisible(true);
         cadastroUsuario.setVisible(false);
         home.setVisible(false);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
+        Aluno.setVisible(false);
+        Professor.setVisible(false);
+        Turma.setVisible(false);
         ListarAluno.setVisible(false);
         ListarProfessor.setVisible(false);
         ListarTurma.setVisible(false);
+        NotasFaltas.setVisible(false);
     }//GEN-LAST:event_BotaoSairActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -2776,238 +2800,75 @@ public class Descktop extends javax.swing.JFrame {
         login.setVisible(false);
         cadastroUsuario.setVisible(false);
         home.setVisible(true);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
+        Aluno.setVisible(false);
+        Professor.setVisible(false);
+        Turma.setVisible(false);
         ListarAluno.setVisible(false);
         ListarProfessor.setVisible(false);
         ListarTurma.setVisible(false);
-
+        NotasFaltas.setVisible(false);
     }//GEN-LAST:event_BotaoHomeCAlunoActionPerformed
 
-    private void BotaoCadastrarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoCadastrarAlunoActionPerformed
-        login.setVisible(false);
-        cadastroUsuario.setVisible(false);
-        home.setVisible(false);
-        CadastarAluno.setVisible(true);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
-        ListarAluno.setVisible(false);
-        ListarProfessor.setVisible(false);
-        ListarTurma.setVisible(false);
-    }//GEN-LAST:event_BotaoCadastrarAlunoActionPerformed
-
-    private void CampCódigoTurmaCAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampCódigoTurmaCAActionPerformed
+    private void CampCodigoTurmaAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampCodigoTurmaAlunoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_CampCódigoTurmaCAActionPerformed
+    }//GEN-LAST:event_CampCodigoTurmaAlunoActionPerformed
 
     private void BotaoHomeLAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoHomeLAlunoActionPerformed
         login.setVisible(false);
         cadastroUsuario.setVisible(false);
         home.setVisible(true);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
+        Aluno.setVisible(false);
+        Professor.setVisible(false);
+        Turma.setVisible(false);
         ListarAluno.setVisible(false);
         ListarProfessor.setVisible(false);
         ListarTurma.setVisible(false);
+        NotasFaltas.setVisible(false);
     }//GEN-LAST:event_BotaoHomeLAlunoActionPerformed
 
     private void BotaoHomeCProfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoHomeCProfActionPerformed
         login.setVisible(false);
         cadastroUsuario.setVisible(false);
         home.setVisible(true);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
+        Aluno.setVisible(false);
+        Professor.setVisible(false);
+        Turma.setVisible(false);
         ListarAluno.setVisible(false);
         ListarProfessor.setVisible(false);
         ListarTurma.setVisible(false);
+        NotasFaltas.setVisible(false);
     }//GEN-LAST:event_BotaoHomeCProfActionPerformed
-
-    private void BotaoHomeCoAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoHomeCoAlunoActionPerformed
-        login.setVisible(false);
-        cadastroUsuario.setVisible(false);
-        home.setVisible(true);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
-        ListarAluno.setVisible(false);
-        ListarProfessor.setVisible(false);
-        ListarTurma.setVisible(false);
-    }//GEN-LAST:event_BotaoHomeCoAlunoActionPerformed
-
-    private void CampCodigo_TurmaCoAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampCodigo_TurmaCoAActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CampCodigo_TurmaCoAActionPerformed
 
     private void BotaoHomeCTurmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoHomeCTurmaActionPerformed
         login.setVisible(false);
         cadastroUsuario.setVisible(false);
         home.setVisible(true);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
+        Aluno.setVisible(false);
+        Professor.setVisible(false);
+        Turma.setVisible(false);
         ListarAluno.setVisible(false);
         ListarProfessor.setVisible(false);
         ListarTurma.setVisible(false);
+        NotasFaltas.setVisible(false);
     }//GEN-LAST:event_BotaoHomeCTurmaActionPerformed
 
-    private void BotaoCadastrarProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoCadastrarProfessorActionPerformed
-        login.setVisible(false);
-        cadastroUsuario.setVisible(false);
-        home.setVisible(false);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(true);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
-        ListarAluno.setVisible(false);
-        ListarProfessor.setVisible(false);
-        ListarTurma.setVisible(false);
-    }//GEN-LAST:event_BotaoCadastrarProfessorActionPerformed
-
-    private void BotaoCadastrarTurmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoCadastrarTurmaActionPerformed
-        login.setVisible(false);
-        cadastroUsuario.setVisible(false);
-        home.setVisible(false);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(true);
-        ConsultarTurma.setVisible(false);
-        ListarAluno.setVisible(false);
-        ListarProfessor.setVisible(false);
-        ListarTurma.setVisible(false);
-    }//GEN-LAST:event_BotaoCadastrarTurmaActionPerformed
-
-    private void BotaoConsultarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoConsultarAlunoActionPerformed
-        login.setVisible(false);
-        cadastroUsuario.setVisible(false);
-        home.setVisible(false);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(true);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
-        ListarAluno.setVisible(false);
-        ListarProfessor.setVisible(false);
-        ListarTurma.setVisible(false);
-    }//GEN-LAST:event_BotaoConsultarAlunoActionPerformed
-
-    private void BotaoConsultarProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoConsultarProfessorActionPerformed
-        login.setVisible(false);
-        cadastroUsuario.setVisible(false);
-        home.setVisible(false);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(true);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
-        ListarAluno.setVisible(false);
-        ListarProfessor.setVisible(false);
-        ListarTurma.setVisible(false);
-    }//GEN-LAST:event_BotaoConsultarProfessorActionPerformed
-
-    private void BotaoConsultarTurmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoConsultarTurmaActionPerformed
-        login.setVisible(false);
-        cadastroUsuario.setVisible(false);
-        home.setVisible(false);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(true);
-        ListarAluno.setVisible(false);
-        ListarProfessor.setVisible(false);
-        ListarTurma.setVisible(false);
-    }//GEN-LAST:event_BotaoConsultarTurmaActionPerformed
-
-    private void BotaoListarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoListarAlunoActionPerformed
-        login.setVisible(false);
-        cadastroUsuario.setVisible(false);
-        home.setVisible(false);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
-        ListarAluno.setVisible(true);
-        ListarProfessor.setVisible(false);
-        ListarTurma.setVisible(false);
-    }//GEN-LAST:event_BotaoListarAlunoActionPerformed
-
-    private void BotaoListarProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoListarProfessorActionPerformed
-        login.setVisible(false);
-        cadastroUsuario.setVisible(false);
-        home.setVisible(false);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
-        ListarAluno.setVisible(false);
-        ListarProfessor.setVisible(true);
-        ListarTurma.setVisible(false);
-    }//GEN-LAST:event_BotaoListarProfessorActionPerformed
-
-    private void BotaoListarTurmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoListarTurmaActionPerformed
-        login.setVisible(false);
-        cadastroUsuario.setVisible(false);
-        home.setVisible(false);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
-        ListarAluno.setVisible(false);
-        ListarProfessor.setVisible(false);
-        ListarTurma.setVisible(true);
-    }//GEN-LAST:event_BotaoListarTurmaActionPerformed
-
-    private void BotaoSalvaCAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSalvaCAActionPerformed
+    private void SalvaAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalvaAlunoActionPerformed
 
         ConexaoBD conexao = new ConexaoBD();
         Connection conn = conexao.getConnection();
 
         String insert = "insert into aluno (matricula, nome, data_Nasc, idade,"
                 + "sexo, nome_Pai, nome_Mae, data_Mat, capacidade, codigo_Turma)"
-                + "values(" + "'" + CampMatricula.getText()
-                + "','" + CampNomeCA.getText()
-                + "','" + CampDataNascCA.getText()
-                + "','" + CampIdadeCA.getText()
-                + "','" + CampSexoCA.getText()
-                + "','" + CampNomePaiCA.getText()
-                + "','" + CampNomeMãeCA.getText()
-                + "','" + CampDataMatCA.getText()
-                + "','" + CampCapacidadeCA.getText()
-                + "','" + CampCódigoTurmaCA.getText() + "')";
+                + "values(" + "'" + CampMatriculaAluno.getText()
+                + "','" + CampNomeAluno.getText()
+                + "','" + CampDataNascAluno.getText()
+                + "','" + CampIdadeAluno.getText()
+                + "','" + CampSexoAluno.getText()
+                + "','" + CampNomePaiAluno.getText()
+                + "','" + CampNomeMaeAluno.getText()
+                + "','" + CampDataMatAluno.getText()
+                + "','" + CampCapacidadeAluno.getText()
+                + "','" + CampCodigoTurmaAluno.getText() + "')";
 
         Statement stmt = null;
 
@@ -3018,12 +2879,12 @@ public class Descktop extends javax.swing.JFrame {
             if (resultado == 1) {
                 JOptionPane.showMessageDialog(null, "Cadastro Efetuado!");
 
-                CadastarAluno.setVisible(true);
+                Aluno.setVisible(true);
 
             } else {
                 JOptionPane.showMessageDialog(null, "Error!");
 
-                CadastarAluno.setVisible(true);
+                Aluno.setVisible(true);
 
             }
 
@@ -3041,19 +2902,19 @@ public class Descktop extends javax.swing.JFrame {
                 e.printStackTrace();
             }
         }
-        this.CampMatricula.setText("");
-        this.CampNomeCA.setText("");
-        this.CampDataNascCA.setText("");
-        this.CampIdadeCA.setText("");
-        this.CampSexoCA.setText("");
-        this.CampNomePaiCA.setText("");
-        this.CampNomeMãeCA.setText("");
-        this.CampDataMatCA.setText("");
-        this.CampCapacidadeCA.setText("");
-        this.CampCódigoTurmaCA.setText("");
+        this.CampMatriculaAluno.setText("");
+        this.CampNomeAluno.setText("");
+        this.CampDataNascAluno.setText("");
+        this.CampIdadeAluno.setText("");
+        this.CampSexoAluno.setText("");
+        this.CampNomePaiAluno.setText("");
+        this.CampNomeMaeAluno.setText("");
+        this.CampDataMatAluno.setText("");
+        this.CampCapacidadeAluno.setText("");
+        this.CampCodigoTurmaAluno.setText("");
 
 
-    }//GEN-LAST:event_BotaoSalvaCAActionPerformed
+    }//GEN-LAST:event_SalvaAlunoActionPerformed
 
     private void BotaoListarAlunoLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoListarAlunoLActionPerformed
 
@@ -3070,10 +2931,11 @@ public class Descktop extends javax.swing.JFrame {
                 Statement statement = conn.createStatement();
                 statement.execute(comandoSelect);
                 ResultSet rs = statement.getResultSet();
-                DefaultTableModel modelo = (DefaultTableModel) Tabela.getModel();
+                DefaultTableModel modelo = (DefaultTableModel) TabelaAluno.getModel();
 
                 while (rs.next()) {
 
+                    //verificar se os atributos da base de dados são os mesmo                   
                     modelo.addRow(new String[]{
                         rs.getString("matricula"),
                         rs.getString("nome"),
@@ -3089,8 +2951,6 @@ public class Descktop extends javax.swing.JFrame {
                 }
             }
 
-            // }catch(ClassNotFoundException ex){
-            //  JOptionPane.showMessageDialog(null, "Erro A classe do driver JDBC não foi encontrada", null, JOptionPane.ERROR_MESSAGE);
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "Erro Ocorreu um erro ao acessar o banco de dados!", null, JOptionPane.ERROR_MESSAGE);
         } finally {
@@ -3106,7 +2966,7 @@ public class Descktop extends javax.swing.JFrame {
 
     private void BotaoLimparAlunoLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoLimparAlunoLActionPerformed
 
-        DefaultTableModel modelo = (DefaultTableModel) Tabela.getModel();
+        DefaultTableModel modelo = (DefaultTableModel) TabelaAluno.getModel();
 
         int contar = modelo.getRowCount();
         for (int a = 1; a <= contar; a++) {
@@ -3114,39 +2974,59 @@ public class Descktop extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BotaoLimparAlunoLActionPerformed
 
-    private void BotaoPesquisaCoAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoPesquisaCoAActionPerformed
+    private void CampMatriculaProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampMatriculaProfessorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CampMatriculaProfessorActionPerformed
+
+    private void BotaoHomeLTurmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoHomeLTurmaActionPerformed
+        login.setVisible(false);
+        cadastroUsuario.setVisible(false);
+        home.setVisible(true);
+        Aluno.setVisible(false);
+        Professor.setVisible(false);
+        Turma.setVisible(false);
+        ListarAluno.setVisible(false);
+        ListarProfessor.setVisible(false);
+        ListarTurma.setVisible(false);
+        NotasFaltas.setVisible(false);
+    }//GEN-LAST:event_BotaoHomeLTurmaActionPerformed
+
+    private void BotaoListaTurmaLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoListaTurmaLActionPerformed
+
         ConexaoBD conexao = new ConexaoBD();
         Connection conn = conexao.getConnection();
-        String Select = "Select * from aluno where Matricula='" + CampMatriculaCoA.getText() + "'";
+
+        String comandoSelect = "SELECT ALL * FROM turma";
 
         try {
-
-            Statement stmt = conn.createStatement();
-            ResultSet resultado = stmt.executeQuery(Select);
-
-            if (resultado.next()) {
-
-                System.out.println("matricula:" + resultado.getString("matricula"));
-                System.out.println();
-
-                JOptionPane.showMessageDialog(null, "Aluno encontrado!");
-                CampNomeCoA.setText(resultado.getString("nome"));
-                CampDataNascCoA.setText(resultado.getString("data_Nasc"));
-                CampIdadeCoA.setText(resultado.getString("idade"));
-                CampSexoCoA.setText(resultado.getString("sexo"));
-                CampNomePaiCoA.setText(resultado.getString("nome_Pai"));
-                CampNomeMaeCoA.setText(resultado.getString("nome_Mae"));
-                CampDataMatCoA.setText(resultado.getString("data_Mat"));
-                CampCapacidadeCoA.setText(resultado.getString("capacidade"));
-                CampCodigo_TurmaCoA.setText(resultado.getString("codigo_Turma"));
-
+            if (conn == null) {
+                JOptionPane.showMessageDialog(null, "Erro de Conexão Com Banco de Dados",
+                        null, JOptionPane.ERROR_MESSAGE);
             } else {
-                JOptionPane.showMessageDialog(null, "aluno não encotrado");
+                Statement statement = conn.createStatement();
+                statement.execute(comandoSelect);
+                ResultSet rs = statement.getResultSet();
+                DefaultTableModel modelo = (DefaultTableModel) TabelaTurma.getModel();
 
+                while (rs.next()) {
+//verificar se os atributos da base de dados são os mesmo
+                    modelo.addRow(new String[]{
+                        rs.getString("Cod_Turma"),
+                        rs.getString("AnoNivel"),
+                        rs.getString("Turma"),
+                        rs.getString("Turno"),
+                        rs.getString("Sala"),
+                        rs.getString("Ano"),
+                        rs.getString("Disciplina1"),
+                        rs.getString("Disciplina2"),
+                        rs.getString("Disciplina3"),
+                        rs.getString("Disciplina4"),});
+
+                }
             }
 
         } catch (SQLException ex) {
-            Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, "Erro Ocorreu um erro ao acessar o banco de dados!", null, JOptionPane.ERROR_MESSAGE);
         } finally {
             try {
                 if (conn != null) {
@@ -3156,46 +3036,133 @@ public class Descktop extends javax.swing.JFrame {
                 e.printStackTrace();
             }
         }
-    }//GEN-LAST:event_BotaoPesquisaCoAActionPerformed
+    }//GEN-LAST:event_BotaoListaTurmaLActionPerformed
 
-    private void BotaoSalvarCoAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSalvarCoAActionPerformed
-        ConexaoBD conexao = new ConexaoBD();
-        Connection conn = conexao.getConnection();
+    private void BotaoLimparTurmaLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoLimparTurmaLActionPerformed
 
-        //String Update = "Update aluno set nome, "where matricula =" + " + CampMatriculaCoA.getText();
+        DefaultTableModel modelo = (DefaultTableModel) TabelaTurma.getModel();
 
-    }//GEN-LAST:event_BotaoSalvarCoAActionPerformed
+        int contar = modelo.getRowCount();
+        for (int a = 1; a <= contar; a++) {
+            modelo.removeRow(0);
+        }
+    }//GEN-LAST:event_BotaoLimparTurmaLActionPerformed
 
-    private void BotaoHomeCProf1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoHomeCProf1ActionPerformed
+    private void BotaoHomeLProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoHomeLProfessorActionPerformed
         login.setVisible(false);
         cadastroUsuario.setVisible(false);
         home.setVisible(true);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
+        Aluno.setVisible(false);
+        Professor.setVisible(false);
+        Turma.setVisible(false);
         ListarAluno.setVisible(false);
-    }//GEN-LAST:event_BotaoHomeCProf1ActionPerformed
+        ListarProfessor.setVisible(false);
+        ListarTurma.setVisible(false);
+        NotasFaltas.setVisible(false);
+    }//GEN-LAST:event_BotaoHomeLProfessorActionPerformed
 
-    private void BotaoHomeCTurma1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoHomeCTurma1ActionPerformed
-        login.setVisible(false);
-        cadastroUsuario.setVisible(false);
-        home.setVisible(true);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
-        ListarAluno.setVisible(false);
-    }//GEN-LAST:event_BotaoHomeCTurma1ActionPerformed
+    private void BotaoListarProfessorLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoListarProfessorLActionPerformed
 
-    private void BotaoDeletarCoAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoDeletarCoAActionPerformed
         ConexaoBD conexao = new ConexaoBD();
         Connection conn = conexao.getConnection();
-        String Delete = "Delete * from aluno where Matricula='" + CampMatriculaCoA.getText() + "'";
+
+        String comandoSelect = "SELECT ALL * FROM professor";
+
+        try {
+            if (conn == null) {
+                JOptionPane.showMessageDialog(null, "Erro de Conexão Com Banco de Dados",
+                        null, JOptionPane.ERROR_MESSAGE);
+            } else {
+                Statement statement = conn.createStatement();
+                statement.execute(comandoSelect);
+                ResultSet rs = statement.getResultSet();
+                DefaultTableModel modelo = (DefaultTableModel) TabelaProfessor.getModel();
+
+                while (rs.next()) {
+//verificar se os atributos da base de dados são os mesmo
+                    modelo.addRow(new String[]{
+                        rs.getString("matricula"),
+                        rs.getString("nome"),
+                        rs.getString("endereco"),
+                        rs.getString("sexo"),
+                        rs.getString("cod_Turma"),});
+
+                }
+            }
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Erro Ocorreu um erro ao acessar o banco de dados!", null, JOptionPane.ERROR_MESSAGE);
+        } finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }//GEN-LAST:event_BotaoListarProfessorLActionPerformed
+
+    private void BotaoLimparrProfessorLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoLimparrProfessorLActionPerformed
+
+        DefaultTableModel modelo = (DefaultTableModel) TabelaProfessor.getModel();
+
+        int contar = modelo.getRowCount();
+        for (int a = 1; a <= contar; a++) {
+            modelo.removeRow(0);
+        }
+    }//GEN-LAST:event_BotaoLimparrProfessorLActionPerformed
+
+    private void CampMatriculaCA51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampMatriculaCA51ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CampMatriculaCA51ActionPerformed
+
+    private void BotaoTurmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoTurmaActionPerformed
+        login.setVisible(false);
+        cadastroUsuario.setVisible(false);
+        home.setVisible(false);
+        Aluno.setVisible(false);
+        Professor.setVisible(false);
+        Turma.setVisible(true);
+        ListarAluno.setVisible(false);
+        ListarProfessor.setVisible(false);
+        ListarTurma.setVisible(false);
+        NotasFaltas.setVisible(false);
+    }//GEN-LAST:event_BotaoTurmaActionPerformed
+
+    private void BotaorAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaorAlunoActionPerformed
+        login.setVisible(false);
+        cadastroUsuario.setVisible(false);
+        home.setVisible(false);
+        Aluno.setVisible(true);
+        Professor.setVisible(false);
+        Turma.setVisible(false);
+        ListarAluno.setVisible(false);
+        ListarProfessor.setVisible(false);
+        ListarTurma.setVisible(false);
+        NotasFaltas.setVisible(false);
+    }//GEN-LAST:event_BotaorAlunoActionPerformed
+
+    private void BotaoProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoProfessorActionPerformed
+        login.setVisible(false);
+        cadastroUsuario.setVisible(false);
+        home.setVisible(false);
+        Aluno.setVisible(false);
+        Professor.setVisible(true);
+        Turma.setVisible(false);
+        ListarAluno.setVisible(false);
+        ListarProfessor.setVisible(false);
+        ListarTurma.setVisible(false);
+        NotasFaltas.setVisible(false);
+    }//GEN-LAST:event_BotaoProfessorActionPerformed
+
+    private void AtualizarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtualizarAlunoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AtualizarAlunoActionPerformed
+
+    private void ExcluirAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExcluirAlunoActionPerformed
+        ConexaoBD conexao = new ConexaoBD();
+        Connection conn = conexao.getConnection();
+        String Delete = "Delete * from aluno where Matricula='" + CampMatriculaAluno.getText() + "'";
 
         try {
 
@@ -3225,35 +3192,36 @@ public class Descktop extends javax.swing.JFrame {
                 e.printStackTrace();
             }
         }
-    }//GEN-LAST:event_BotaoDeletarCoAActionPerformed
+    }//GEN-LAST:event_ExcluirAlunoActionPerformed
 
-    private void BotaoSalvarCPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSalvarCPActionPerformed
+    private void SelecionaAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SelecionaAlunoActionPerformed
         ConexaoBD conexao = new ConexaoBD();
         Connection conn = conexao.getConnection();
-
-        String insert = "insert into professor (matricula, nome, endereco, sexo,"
-                + "cod_Turma)"
-                + "values(" + "'" + CampMatriculaCP.getText()
-                + "','" + CampNomeCP.getText()
-                + "','" + CampEnderecoCP.getText()
-                + "','" + CampSexoCP.getText()
-                + "','" + CampCodigoTurmaCP.getText() + "')";
-
-        Statement stmt = null;
+        String Select = "Select * from aluno where Matricula='" + CampMatriculaAluno.getText() + "'";
 
         try {
-            stmt = conn.createStatement();
-            int resultado = stmt.executeUpdate(insert);
 
-            if (resultado == 1) {
-                JOptionPane.showMessageDialog(null, "Cadastro Efetuado!");
+            Statement stmt = conn.createStatement();
+            ResultSet resultado = stmt.executeQuery(Select);
 
-                CadastraProfessor.setVisible(true);
+            if (resultado.next()) {
+
+                System.out.println("matricula:" + resultado.getString("matricula"));
+                System.out.println();
+
+                JOptionPane.showMessageDialog(null, "Aluno encontrado!");
+                CampNomeAluno.setText(resultado.getString("nome"));
+                CampDataNascAluno.setText(resultado.getString("data_Nasc"));
+                CampIdadeAluno.setText(resultado.getString("idade"));
+                CampSexoAluno.setText(resultado.getString("sexo"));
+                CampNomePaiAluno.setText(resultado.getString("nome_Pai"));
+                CampNomeMaeAluno.setText(resultado.getString("nome_Mae"));
+                CampDataMatAluno.setText(resultado.getString("data_Mat"));
+                CampCapacidadeAluno.setText(resultado.getString("capacidade"));
+                CampCodigoTurmaAluno.setText(resultado.getString("codigo_Turma"));
 
             } else {
-                JOptionPane.showMessageDialog(null, "Error!");
-
-                CadastraProfessor.setVisible(true);
+                JOptionPane.showMessageDialog(null, "aluno não encotrado");
 
             }
 
@@ -3261,9 +3229,6 @@ public class Descktop extends javax.swing.JFrame {
             Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             try {
-                if (stmt != null) {
-                    stmt.close();
-                }
                 if (conn != null) {
                     conn.close();
                 }
@@ -3271,41 +3236,60 @@ public class Descktop extends javax.swing.JFrame {
                 e.printStackTrace();
             }
         }
+    }//GEN-LAST:event_SelecionaAlunoActionPerformed
 
-        this.CampMatriculaCP.setText("");
-        this.CampNomeCP.setText("");
-        this.CampEnderecoCP.setText("");
-        this.CampSexoCP.setText("");
-        this.CampCodigoTurmaCP.setText("");
-
-    }//GEN-LAST:event_BotaoSalvarCPActionPerformed
-
-    private void CampMatriculaCPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampMatriculaCPActionPerformed
+    private void LimparAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LimparAlunoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_CampMatriculaCPActionPerformed
+    }//GEN-LAST:event_LimparAlunoActionPerformed
 
-    private void BotaoSalvarCTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoSalvarCTActionPerformed
+    private void ListarAlunoAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ListarAlunoAlunoActionPerformed
+        login.setVisible(false);
+        cadastroUsuario.setVisible(false);
+        home.setVisible(false);
+        Aluno.setVisible(false);
+        Professor.setVisible(false);
+        Turma.setVisible(false);
+        ListarAluno.setVisible(true);
+        ListarProfessor.setVisible(false);
+        ListarTurma.setVisible(false);
+        NotasFaltas.setVisible(false);
+    }//GEN-LAST:event_ListarAlunoAlunoActionPerformed
+
+    private void HistoricoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HistoricoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_HistoricoActionPerformed
+
+    private void EnserirNotaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnserirNotaActionPerformed
+        NotasFaltas.setVisible(true);
+        login.setVisible(false);
+        cadastroUsuario.setVisible(false);
+        home.setVisible(false);
+        Aluno.setVisible(false);
+        Professor.setVisible(false);
+        Turma.setVisible(false);
+        ListarAluno.setVisible(false);
+        ListarProfessor.setVisible(false);
+        ListarTurma.setVisible(false);
+    }//GEN-LAST:event_EnserirNotaActionPerformed
+
+    private void SalvaTurmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalvaTurmaActionPerformed
 
         ConexaoBD conexao = new ConexaoBD();
         Connection conn = conexao.getConnection();
 
-        String insert = "insert into turma (Cod_Turma, AnoNivel, Turma, Turno,"
-                + "Sala, Ano, Disciplina1, Disciplina2, Disciplina3,"
-                + "Disciplina4, Disciplina5, Disciplina6, Disciplina7, Disciplina8)"
-                + "values(" + "'" + CampCod_TurmaCT.getText()
-                + "','" + CampAnoSerieCT.getText()
-                + "','" + CampTurmaCT.getText()
-                + "','" + CampTurnoCT.getText()
-                + "','" + CampSalaCT.getText()
-                + "','" + CampAnoCT.getText()
-                + "','" + CampDisciplina1CT.getText()
-                + "','" + CampDisciplina2CT.getText()
-                + "','" + CampDisciplina3CT.getText()
-                + "','" + CampDisciplina4CT.getText()
-                + "','" + CampDisciplina5CT.getText()
-                + "','" + CampDisciplina6CT.getText()
-                + "','" + CampDisciplina7CT.getText()
-                + "','" + CampDisciplina8CT.getText() + "')";
+        //falta inseri os atributos da base de dados
+        String insert = "insert into turma (matricula, nome, data_Nasc, idade,"
+                + "sexo, nome_Pai, nome_Mae, data_Mat, capacidade, codigo_Turma)"
+                + "values(" + "'" + CampCodigoTurma.getText()
+                + "','" + CampAnoSerieTurma.getText()
+                + "','" + CampTurma.getText()
+                + "','" + CampAnoTurma.getText()
+                + "','" + CampSalaTurma.getText()
+                + "','" + CampTurnoTurma.getText()
+                + "','" + CampDisciplina1.getText()
+                + "','" + CampDisciplina2.getText()
+                + "','" + CampDisciplina3.getText()
+                + "','" + CampDisciplina4.getText() + "')";
 
         Statement stmt = null;
 
@@ -3316,11 +3300,13 @@ public class Descktop extends javax.swing.JFrame {
             if (resultado == 1) {
                 JOptionPane.showMessageDialog(null, "Cadastro Efetuado!");
 
-                //CadastarTurma.setVisible(true);
+                Aluno.setVisible(true);
+
             } else {
                 JOptionPane.showMessageDialog(null, "Error!");
 
-               // CadastarTurma.setVisible(true);
+                Aluno.setVisible(true);
+
             }
 
         } catch (SQLException ex) {
@@ -3337,79 +3323,54 @@ public class Descktop extends javax.swing.JFrame {
                 e.printStackTrace();
             }
         }
-        this.CampCod_TurmaCT.setText("");
-        this.CampAnoSerieCT.setText("");
-        this.CampTurmaCT.setText("");
-        this.CampTurnoCT.setText("");
-        this.CampSalaCT.setText("");
-        this.CampAnoCT.setText("");
-        this.CampDisciplina1CT.setText("");
-        this.CampDisciplina2CT.setText("");
-        this.CampDisciplina3CT.setText("");
-        this.CampDisciplina4CT.setText("");
-        this.CampDisciplina5CT.setText("");
-        this.CampDisciplina6CT.setText("");
-        this.CampDisciplina7CT.setText("");
-        this.CampDisciplina8CT.setText("");
-    }//GEN-LAST:event_BotaoSalvarCTActionPerformed
+        this.CampCodigoTurma.setText("");
+        this.CampAnoSerieTurma.setText("");
+        this.CampTurma.setText("");
+        this.CampAnoTurma.setText("");
+        this.CampSalaTurma.setText("");
+        this.CampTurnoTurma.setText("");
+        this.CampDisciplina1.setText("");
+        this.CampDisciplina2.setText("");
+        this.CampDisciplina3.setText("");
+        this.CampDisciplina4.setText("");
+    }//GEN-LAST:event_SalvaTurmaActionPerformed
 
-    private void BotaoHomeLTurmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoHomeLTurmaActionPerformed
-        login.setVisible(false);
-        cadastroUsuario.setVisible(false);
-        home.setVisible(true);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
-        ListarAluno.setVisible(false);
-        ListarProfessor.setVisible(false);
-        ListarTurma.setVisible(false);
-    }//GEN-LAST:event_BotaoHomeLTurmaActionPerformed
+    private void SelecionaTurmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SelecionaTurmaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SelecionaTurmaActionPerformed
 
-    private void BotaoListaTurmaLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoListaTurmaLActionPerformed
+    private void AtualizarTurmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtualizarTurmaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AtualizarTurmaActionPerformed
 
+    private void LimparTurmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LimparTurmaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LimparTurmaActionPerformed
+
+    private void ExcluirTurmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExcluirTurmaActionPerformed
         ConexaoBD conexao = new ConexaoBD();
         Connection conn = conexao.getConnection();
-
-        String comandoSelect = "SELECT ALL * FROM turma";
+        String Delete = "Delete * from turma where Matricula='" + CampCodigoTurma.getText() + "'";
 
         try {
-            if (conn == null) {
-                JOptionPane.showMessageDialog(null, "Erro de Conexão Com Banco de Dados",
-                        null, JOptionPane.ERROR_MESSAGE);
+
+            Statement stmt = conn.createStatement();
+            ResultSet resultado = stmt.executeQuery(Delete);
+
+            if (resultado.next()) {
+
+                System.out.println("matricula:" + resultado.getString("matricula"));
+                System.out.println();
+
+                JOptionPane.showMessageDialog(null, "Turma encontrado!");
+
             } else {
-                Statement statement = conn.createStatement();
-                statement.execute(comandoSelect);
-                ResultSet rs = statement.getResultSet();
-                DefaultTableModel modelo = (DefaultTableModel) Tabela1.getModel();
+                JOptionPane.showMessageDialog(null, "Turma não encotrado");
 
-                while (rs.next()) {
-
-                    modelo.addRow(new String[]{
-                        rs.getString("Cod_Turma"),
-                        rs.getString("AnoNivel"),
-                        rs.getString("Turma"),
-                        rs.getString("Turno"),
-                        rs.getString("Sala"),
-                        rs.getString("Ano"),
-                        rs.getString("Disciplina1"),
-                        rs.getString("Disciplina2"),
-                        rs.getString("Disciplina3"),
-                        rs.getString("Disciplina4"),
-                        rs.getString("Disciplina5"),
-                        rs.getString("Disciplina6"),
-                        rs.getString("Disciplina7"),
-                        rs.getString("Disciplina8"),});
-
-                }
             }
 
-            // }catch(ClassNotFoundException ex){
-            //  JOptionPane.showMessageDialog(null, "Erro A classe do driver JDBC não foi encontrada", null, JOptionPane.ERROR_MESSAGE);
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "Erro Ocorreu um erro ao acessar o banco de dados!", null, JOptionPane.ERROR_MESSAGE);
+            Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             try {
                 if (conn != null) {
@@ -3419,68 +3380,60 @@ public class Descktop extends javax.swing.JFrame {
                 e.printStackTrace();
             }
         }
-    }//GEN-LAST:event_BotaoListaTurmaLActionPerformed
+    }//GEN-LAST:event_ExcluirTurmaActionPerformed
 
-    private void BotaoLimparTurmaLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoLimparTurmaLActionPerformed
-
-        DefaultTableModel modelo = (DefaultTableModel) Tabela1.getModel();
-
-        int contar = modelo.getRowCount();
-        for (int a = 1; a <= contar; a++) {
-            modelo.removeRow(0);
-        }
-    }//GEN-LAST:event_BotaoLimparTurmaLActionPerformed
-
-    private void BotaoHomeLProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoHomeLProfessorActionPerformed
+    private void ListarTurmaTurmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ListarTurmaTurmaActionPerformed
         login.setVisible(false);
         cadastroUsuario.setVisible(false);
-        home.setVisible(true);
-        CadastarAluno.setVisible(false);
-        ConsultarAluno.setVisible(false);
-        CadastraProfessor.setVisible(false);
-        CadastraProfessor1.setVisible(false);
-        CadastarTurma.setVisible(false);
-        ConsultarTurma.setVisible(false);
+        home.setVisible(false);
+        Aluno.setVisible(false);
+        Professor.setVisible(false);
+        Turma.setVisible(false);
         ListarAluno.setVisible(false);
         ListarProfessor.setVisible(false);
-        ListarTurma.setVisible(false);
-    }//GEN-LAST:event_BotaoHomeLProfessorActionPerformed
+        ListarTurma.setVisible(true);
+        NotasFaltas.setVisible(false);
+    }//GEN-LAST:event_ListarTurmaTurmaActionPerformed
 
-    private void BotaoListarProfessorLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoListarProfessorLActionPerformed
+    private void SalvaTurma1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalvaTurma1ActionPerformed
 
         ConexaoBD conexao = new ConexaoBD();
         Connection conn = conexao.getConnection();
 
-        String comandoSelect = "SELECT ALL * FROM professor";
+        //falta inseri os atributos da base de dados
+        String insert = "insert into professor (matricula, nome, data_Nasc, idade,"
+                + "sexo, nome_Pai, nome_Mae, data_Mat, capacidade, codigo_Turma)"
+                + "values(" + "'" + CampMatriculaProfessor.getText()
+                + "','" + CampNomeProfessor.getText()
+                + "','" + CampEnderecoProfessor.getText()
+                + "','" + CampSexoProfessor.getText()
+                + "','" + CampCodigoTurmaProfessor.getText() + "')";
+
+        Statement stmt = null;
 
         try {
-            if (conn == null) {
-                JOptionPane.showMessageDialog(null, "Erro de Conexão Com Banco de Dados",
-                        null, JOptionPane.ERROR_MESSAGE);
+            stmt = conn.createStatement();
+            int resultado = stmt.executeUpdate(insert);
+
+            if (resultado == 1) {
+                JOptionPane.showMessageDialog(null, "Cadastro Efetuado!");
+
+                Aluno.setVisible(true);
+
             } else {
-                Statement statement = conn.createStatement();
-                statement.execute(comandoSelect);
-                ResultSet rs = statement.getResultSet();
-                DefaultTableModel modelo = (DefaultTableModel) Tabela2.getModel();
+                JOptionPane.showMessageDialog(null, "Error!");
 
-                while (rs.next()) {
+                Aluno.setVisible(true);
 
-                    modelo.addRow(new String[]{
-                        rs.getString("matricula"),
-                        rs.getString("nome"),
-                        rs.getString("endereco"),
-                        rs.getString("sexo"),
-                        rs.getString("cod_Turma"),});
-
-                }
             }
 
-            // }catch(ClassNotFoundException ex){
-            //  JOptionPane.showMessageDialog(null, "Erro A classe do driver JDBC não foi encontrada", null, JOptionPane.ERROR_MESSAGE);
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "Erro Ocorreu um erro ao acessar o banco de dados!", null, JOptionPane.ERROR_MESSAGE);
+            Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             try {
+                if (stmt != null) {
+                    stmt.close();
+                }
                 if (conn != null) {
                     conn.close();
                 }
@@ -3488,23 +3441,19 @@ public class Descktop extends javax.swing.JFrame {
                 e.printStackTrace();
             }
         }
-    }//GEN-LAST:event_BotaoListarProfessorLActionPerformed
+        this.CampMatriculaProfessor.setText("");
+        this.CampNomeProfessor.setText("");
+        this.CampEnderecoProfessor.setText("");
+        this.CampSexoProfessor.setText("");
+        this.CampCodigoTurmaProfessor.setText("");
+    }//GEN-LAST:event_SalvaTurma1ActionPerformed
 
-    private void BotaoLimparrProfessorLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoLimparrProfessorLActionPerformed
+    private void SelecionaProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SelecionaProfessorActionPerformed
 
-        DefaultTableModel modelo = (DefaultTableModel) Tabela2.getModel();
-
-        int contar = modelo.getRowCount();
-        for (int a = 1; a <= contar; a++) {
-            modelo.removeRow(0);
-        }
-    }//GEN-LAST:event_BotaoLimparrProfessorLActionPerformed
-
-    private void BotaoPesquisaCoPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoPesquisaCoPActionPerformed
-
+//verificar se o nome da base de dados é o mesmo que o projeto
         ConexaoBD conexao = new ConexaoBD();
         Connection conn = conexao.getConnection();
-        String Select = "Select * from professor where Matricula='" + campMatricularCoP.getText() + "'";
+        String Select = "Select * from professor where Matricula='" + CampMatriculaProfessor.getText() + "'";
 
         try {
 
@@ -3517,10 +3466,54 @@ public class Descktop extends javax.swing.JFrame {
                 System.out.println();
 
                 JOptionPane.showMessageDialog(null, "Professor encontrado!");
-                campNomeCoP.setText(resultado.getString("nome"));
-                campEnderecoCoP.setText(resultado.getString("endereco"));
-                campSexoCoP.setText(resultado.getString("sexo"));
-                campCodigoTurmaCoP.setText(resultado.getString("cod_Turma"));
+                CampMatriculaProfessor.setText(resultado.getString("matricula"));
+                CampNomeProfessor.setText(resultado.getString("Nome"));
+                CampEnderecoProfessor.setText(resultado.getString("Endereco"));
+                CampSexoProfessor.setText(resultado.getString("sexo"));
+                CampCodigoTurmaProfessor.setText(resultado.getString("CodigoTurma"));
+
+            } else {
+                JOptionPane.showMessageDialog(null, "aluno não encotrado");
+
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }//GEN-LAST:event_SelecionaProfessorActionPerformed
+
+    private void AtualizarTurma1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtualizarTurma1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AtualizarTurma1ActionPerformed
+
+    private void LimparProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LimparProfessorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LimparProfessorActionPerformed
+
+    private void ExcluirProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExcluirProfessorActionPerformed
+        ConexaoBD conexao = new ConexaoBD();
+        Connection conn = conexao.getConnection();
+        String Delete = "Delete * from professor where Matricula='" + CampMatriculaProfessor.getText() + "'";
+
+        try {
+
+            Statement stmt = conn.createStatement();
+            ResultSet resultado = stmt.executeQuery(Delete);
+
+            if (resultado.next()) {
+
+                System.out.println("matricula:" + resultado.getString("matricula"));
+                System.out.println();
+
+                JOptionPane.showMessageDialog(null, "Professor encontrado!");
 
             } else {
                 JOptionPane.showMessageDialog(null, "Professor não encotrado");
@@ -3538,18 +3531,36 @@ public class Descktop extends javax.swing.JFrame {
                 e.printStackTrace();
             }
         }
-    }//GEN-LAST:event_BotaoPesquisaCoPActionPerformed
+    }//GEN-LAST:event_ExcluirProfessorActionPerformed
 
-    private void campNomeCoPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campNomeCoPActionPerformed
+    private void ListarProfessorProfessorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ListarProfessorProfessorActionPerformed
+        login.setVisible(false);
+        cadastroUsuario.setVisible(false);
+        home.setVisible(false);
+        Aluno.setVisible(false);
+        Professor.setVisible(false);
+        Turma.setVisible(false);
+        ListarAluno.setVisible(false);
+        ListarProfessor.setVisible(true);
+        ListarTurma.setVisible(false);
+        NotasFaltas.setVisible(false);
+    }//GEN-LAST:event_ListarProfessorProfessorActionPerformed
+
+    private void CampMatriculaAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampMatriculaAlunoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campNomeCoPActionPerformed
+    }//GEN-LAST:event_CampMatriculaAlunoActionPerformed
 
-    private void BotaoPesquisarCoTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoPesquisarCoTActionPerformed
+    private void CampCodigoTurmaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampCodigoTurmaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CampCodigoTurmaActionPerformed
 
+    private void BuscarNotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarNotasActionPerformed
         ConexaoBD conexao = new ConexaoBD();
         Connection conn = conexao.getConnection();
-        String Select = "Select * from turma where Cod_Turma='" + CampMatriculaCoT.getText() + "'";
+        String Select = "Select * from aluno where Matricula='" + CampMatriculaAlunoNota.getText() + "'"
+                + "Select * from turma where Matricula='" + CampCodigoTurmaNota.getText() + "'";
 
+         JOptionPane.showMessageDialog(null, "Erro de Conexão Com Banco de Dados");
         try {
 
             Statement stmt = conn.createStatement();
@@ -3557,26 +3568,17 @@ public class Descktop extends javax.swing.JFrame {
 
             if (resultado.next()) {
 
-                System.out.println("Cod_Turma:" + resultado.getString("Cod_Turma"));
+                System.out.println("matricula:" + resultado.getString("matricula"));
                 System.out.println();
 
-                JOptionPane.showMessageDialog(null, "Turma encontrada!");
-                CampAnoSerieCoT.setText(resultado.getString("AnoNivel"));
-                CampTurmaCoT.setText(resultado.getString("Turma"));
-                CampTurnoCoT.setText(resultado.getString("Turno"));
-                CampSalaCoT.setText(resultado.getString("Sala"));
-                CampAnoCoT.setText(resultado.getString("Ano"));
-                CampDisciplina1CoT.setText(resultado.getString("Disciplina1"));
-                CampDisciplina2CoT.setText(resultado.getString("Disciplina2"));
-                CampDisciplina3CoT.setText(resultado.getString("Disciplina3"));
-                CampDisciplina4CoT.setText(resultado.getString("Disciplina4"));
-                CampDisciplina5CoT.setText(resultado.getString("Disciplina5"));
-                CampDisciplina6CoT.setText(resultado.getString("Disciplina6"));
-                CampDisciplina7CoT.setText(resultado.getString("Disciplina7"));
-                CampDisciplina8CoT.setText(resultado.getString("Disciplina8"));
+                JOptionPane.showMessageDialog(null, "Aluno encontrado!");
+                Disciplina1.setText(resultado.getString("CampDisciplina1"));
+                Disciplina2.setText(resultado.getString("CampDisciplina2"));
+                Disciplina3.setText(resultado.getString("CampDisciplina3"));
+                Disciplina4.setText(resultado.getString("CampDisciplina4"));
 
             } else {
-                JOptionPane.showMessageDialog(null, "Turma não encotrada!");
+                JOptionPane.showMessageDialog(null, "aluno não encotrado");
 
             }
 
@@ -3591,12 +3593,195 @@ public class Descktop extends javax.swing.JFrame {
                 e.printStackTrace();
             }
         }
+    }//GEN-LAST:event_BuscarNotasActionPerformed
 
-    }//GEN-LAST:event_BotaoPesquisarCoTActionPerformed
-
-    private void CampMatriculaCA51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampMatriculaCA51ActionPerformed
+    private void LimpaNotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LimpaNotasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_CampMatriculaCA51ActionPerformed
+    }//GEN-LAST:event_LimpaNotasActionPerformed
+
+    private void LimpaTabNotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LimpaTabNotasActionPerformed
+        DefaultTableModel modelo = (DefaultTableModel) TabelaNotasFaltas.getModel();
+
+        int contar = modelo.getRowCount();
+        for (int a = 1; a <= contar; a++) {
+            modelo.removeRow(0);
+        }
+    }//GEN-LAST:event_LimpaTabNotasActionPerformed
+
+    private void ConsultarNotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConsultarNotasActionPerformed
+
+        ConexaoBD conexao = new ConexaoBD();
+        Connection conn = conexao.getConnection();
+
+        String comandoSelect = "Select * from NotasFaltas where Matricula='" + CampMatriculaAlunoNota.getText() + "'";
+        
+        try {
+            if (conn == null) {
+                JOptionPane.showMessageDialog(null, "Erro de Conexão Com Banco de Dados",
+                        null, JOptionPane.ERROR_MESSAGE);
+            } else {
+                Statement statement = conn.createStatement();
+                statement.execute(comandoSelect);
+                ResultSet rs = statement.getResultSet();
+                DefaultTableModel modelo = (DefaultTableModel) TabelaNotasFaltas.getModel();
+
+                while (rs.next()) {
+//verificar se os atributos da base de dados são os mesmo
+                    modelo.addRow(new String[]{
+                        rs.getString("disciplina"),
+                        rs.getString("Nota1ºB"),
+                        rs.getString("Falta1ºB"),
+                        rs.getString("Nota2ºB"),
+                        rs.getString("Falta2ºB"),
+                        rs.getString("Nota3ºB"),
+                        rs.getString("Falta3ºB"),
+                        rs.getString("Nota4ºB"),
+                        rs.getString("Falta4ºB"),});
+                }
+            }
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Erro Ocorreu um erro ao acessar o banco de dados!", null, JOptionPane.ERROR_MESSAGE);
+        } finally {
+            try {
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }//GEN-LAST:event_ConsultarNotasActionPerformed
+
+    private void BotaoHomeLProfessor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotaoHomeLProfessor1ActionPerformed
+        login.setVisible(false);
+        cadastroUsuario.setVisible(false);
+        home.setVisible(true);
+        Aluno.setVisible(false);
+        Professor.setVisible(false);
+        Turma.setVisible(false);
+        ListarAluno.setVisible(false);
+        ListarProfessor.setVisible(false);
+        ListarTurma.setVisible(false);
+        NotasFaltas.setVisible(false);
+    }//GEN-LAST:event_BotaoHomeLProfessor1ActionPerformed
+
+    private void AdcionarNotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdcionarNotasActionPerformed
+
+        ConexaoBD conexao = new ConexaoBD();
+        Connection conn = conexao.getConnection();
+
+        String insert = "insert into NotasFaltas (matricula, Disciplina1, Disciplina1, Disciplina1,"
+                + "Disciplina1, Nota11ºB, Falta11ºB,  Nota21ºB, Falta21ºB, Nota31ºB, Falta31ºB,"
+                + " Nota41ºB, Falta41ºB, Nota12ºB, Falta12ºB, Nota22ºB, Falta22ºB, Nota32ºB, Falta32ºB,"
+                + " Nota42ºB, Falta42ºB, Nota13ºB, Falta13ºB, Nota23ºB, Falta23ºB, Nota33ºB, Falta33ºB,"
+                + " Nota43ºB, Falta43ºB, Nota14ºB, Falta14ºB, Nota24ºB, Falta24ºB, Nota34ºB, Falta34ºB,"
+                + " Nota44ºB, Falta44ºB,)"
+                + " values(" + "'" + Nota11ºB.getText()
+                + "','" + Falta11ºB.getText()
+                + "','" + Nota21ºB.getText()
+                + "','" + Falta21ºB.getText()
+                + "','" + Nota31ºB.getText()
+                + "','" + Falta31ºB.getText()
+                + "','" + Nota41ºB.getText()
+                + "','" + Falta41ºB.getText()
+                
+                + "','" + Nota12ºB.getText()
+                + "','" + Falta12ºB.getText()
+                + "','" + Nota22ºB.getText()
+                + "','" + Falta22ºB.getText()
+                + "','" + Nota32ºB.getText()
+                + "','" + Falta32ºB.getText()
+                + "','" + Nota42ºB.getText()
+                + "','" + Falta42ºB.getText()
+                
+                + "','" + Nota13ºB.getText()
+                + "','" + Falta13ºB.getText()
+                + "','" + Nota23ºB.getText()
+                + "','" + Falta23ºB.getText()
+                + "','" + Nota33ºB.getText()
+                + "','" + Falta33ºB.getText()
+                + "','" + Nota43ºB.getText()
+                + "','" + Falta43ºB.getText()
+                
+                + "','" + Nota14ºB.getText()
+                + "','" + Falta14ºB.getText()
+                + "','" + Nota24ºB.getText()
+                + "','" + Falta24ºB.getText()
+                + "','" + Nota34ºB.getText()
+                + "','" + Falta34ºB.getText()
+                + "','" + Nota44ºB.getText()
+                + "','" + Falta44ºB.getText() + "')";
+
+        Statement stmt = null;
+
+        try {
+            stmt = conn.createStatement();
+            int resultado = stmt.executeUpdate(insert);
+
+            if (resultado == 1) {
+                JOptionPane.showMessageDialog(null, "Cadastro Efetuado!");
+
+                Aluno.setVisible(true);
+
+            } else {
+                JOptionPane.showMessageDialog(null, "Error!");
+
+                Aluno.setVisible(true);
+
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(Descktop.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                if (stmt != null) {
+                    stmt.close();
+                }
+                if (conn != null) {
+                    conn.close();
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        this.Nota11ºB.setText("");
+        this.Falta11ºB.setText("");
+        this.Nota21ºB.setText("");
+        this.Falta21ºB.setText("");
+        this.Nota31ºB.setText("");
+        this.Falta31ºB.setText("");
+        this.Nota41ºB.setText("");
+        this.Falta41ºB.setText("");
+
+        this.Nota12ºB.setText("");
+        this.Falta12ºB.setText("");
+        this.Nota22ºB.setText("");
+        this.Falta22ºB.setText("");
+        this.Nota32ºB.setText("");
+        this.Falta32ºB.setText("");
+        this.Nota42ºB.setText("");
+        this.Falta42ºB.setText("");
+
+        this.Nota13ºB.setText("");
+        this.Falta13ºB.setText("");
+        this.Nota23ºB.setText("");
+        this.Falta23ºB.setText("");
+        this.Nota33ºB.setText("");
+        this.Falta33ºB.setText("");
+        this.Nota43ºB.setText("");
+        this.Falta43ºB.setText("");
+
+        this.Nota14ºB.setText("");
+        this.Falta14ºB.setText("");
+        this.Nota24ºB.setText("");
+        this.Falta24ºB.setText("");
+        this.Nota34ºB.setText("");
+        this.Falta34ºB.setText("");
+        this.Nota44ºB.setText("");
+        this.Falta44ºB.setText("");
+
+
+    }//GEN-LAST:event_AdcionarNotasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -3634,169 +3819,187 @@ public class Descktop extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BotaoCadastrarAluno;
+    private javax.swing.JButton AdcionarNotas;
+    private javax.swing.JInternalFrame Aluno;
+    private javax.swing.JButton AtualizarAluno;
+    private javax.swing.JButton AtualizarTurma;
+    private javax.swing.JButton AtualizarTurma1;
     private javax.swing.JButton BotaoCadastrarLogin;
-    private javax.swing.JButton BotaoCadastrarProfessor;
-    private javax.swing.JButton BotaoCadastrarTurma;
-    private javax.swing.JButton BotaoConsultarAluno;
-    private javax.swing.JButton BotaoConsultarProfessor;
-    private javax.swing.JButton BotaoConsultarTurma;
-    private javax.swing.JButton BotaoDeletarCoA;
-    private javax.swing.JButton BotaoDeleteCoP;
-    private javax.swing.JButton BotaoDeleteCoT;
     private javax.swing.JButton BotaoEntraLogin;
     private javax.swing.JButton BotaoHomeCAluno;
     private javax.swing.JButton BotaoHomeCProf;
-    private javax.swing.JButton BotaoHomeCProf1;
     private javax.swing.JButton BotaoHomeCTurma;
-    private javax.swing.JButton BotaoHomeCTurma1;
-    private javax.swing.JButton BotaoHomeCoAluno;
     private javax.swing.JButton BotaoHomeLAluno;
     private javax.swing.JButton BotaoHomeLProfessor;
+    private javax.swing.JButton BotaoHomeLProfessor1;
     private javax.swing.JButton BotaoHomeLTurma;
-    private javax.swing.JButton BotaoLimaprCT;
     private javax.swing.JButton BotaoLimparAlunoL;
-    private javax.swing.JButton BotaoLimparCP;
     private javax.swing.JButton BotaoLimparTurmaL;
     private javax.swing.JButton BotaoLimparrProfessorL;
     private javax.swing.JButton BotaoListaTurmaL;
-    private javax.swing.JButton BotaoListarAluno;
     private javax.swing.JButton BotaoListarAlunoL;
-    private javax.swing.JButton BotaoListarProfessor;
     private javax.swing.JButton BotaoListarProfessorL;
-    private javax.swing.JButton BotaoListarTurma;
-    private javax.swing.JButton BotaoPesquisaCoA;
-    private javax.swing.JButton BotaoPesquisaCoP;
-    private javax.swing.JButton BotaoPesquisarCoT;
+    private javax.swing.JButton BotaoProfessor;
     private javax.swing.JButton BotaoSair;
     private javax.swing.JButton BotaoSalva;
-    private javax.swing.JButton BotaoSalvaCA;
-    private javax.swing.JButton BotaoSalvarCP;
-    private javax.swing.JButton BotaoSalvarCT;
-    private javax.swing.JButton BotaoSalvarCoA;
-    private javax.swing.JButton BotaoSalvarCoP;
-    private javax.swing.JButton BotaoSalvarCoT;
-    private javax.swing.JInternalFrame CadastarAluno;
-    private javax.swing.JInternalFrame CadastarTurma;
-    private javax.swing.JInternalFrame CadastraProfessor;
-    private javax.swing.JInternalFrame CadastraProfessor1;
-    private javax.swing.JTextField CampAnoCT;
-    private javax.swing.JTextField CampAnoCoT;
-    private javax.swing.JTextField CampAnoSerieCT;
-    private javax.swing.JTextField CampAnoSerieCoT;
-    private javax.swing.JTextField CampCapacidadeCA;
-    private javax.swing.JTextField CampCapacidadeCoA;
-    private javax.swing.JTextField CampCod_TurmaCT;
-    private javax.swing.JTextField CampCodigoTurmaCP;
-    private javax.swing.JTextField CampCodigo_TurmaCoA;
-    private javax.swing.JTextField CampCódigoTurmaCA;
-    private javax.swing.JTextField CampDataMatCA;
-    private javax.swing.JTextField CampDataMatCoA;
-    private javax.swing.JTextField CampDataNascCA;
-    private javax.swing.JTextField CampDataNascCoA;
-    private javax.swing.JTextField CampDisciplina1CT;
-    private javax.swing.JTextField CampDisciplina1CoT;
-    private javax.swing.JTextField CampDisciplina2CT;
-    private javax.swing.JTextField CampDisciplina2CoT;
-    private javax.swing.JTextField CampDisciplina3CT;
-    private javax.swing.JTextField CampDisciplina3CoT;
-    private javax.swing.JTextField CampDisciplina4CT;
-    private javax.swing.JTextField CampDisciplina4CoT;
-    private javax.swing.JTextField CampDisciplina5CT;
-    private javax.swing.JTextField CampDisciplina5CoT;
-    private javax.swing.JTextField CampDisciplina6CT;
-    private javax.swing.JTextField CampDisciplina6CoT;
-    private javax.swing.JTextField CampDisciplina7CT;
-    private javax.swing.JTextField CampDisciplina7CoT;
-    private javax.swing.JTextField CampDisciplina8CT;
-    private javax.swing.JTextField CampDisciplina8CoT;
-    private javax.swing.JTextField CampEnderecoCP;
-    private javax.swing.JTextField CampIdadeCA;
-    private javax.swing.JTextField CampIdadeCoA;
-    private javax.swing.JTextField CampMatricula;
+    private javax.swing.JButton BotaoTurma;
+    private javax.swing.JButton BotaorAluno;
+    private javax.swing.JButton BuscarNotas;
+    private javax.swing.JTextField CampAnoSerieTurma;
+    private javax.swing.JTextField CampAnoTurma;
+    private javax.swing.JTextField CampCapacidadeAluno;
+    private javax.swing.JTextField CampCodigoTurma;
+    private javax.swing.JTextField CampCodigoTurmaAluno;
+    private javax.swing.JTextField CampCodigoTurmaNota;
+    private javax.swing.JTextField CampCodigoTurmaProfessor;
+    private javax.swing.JTextField CampDataMatAluno;
+    private javax.swing.JTextField CampDataNascAluno;
+    private javax.swing.JTextField CampDisciplina1;
+    private javax.swing.JTextField CampDisciplina2;
+    private javax.swing.JTextField CampDisciplina3;
+    private javax.swing.JTextField CampDisciplina4;
+    private javax.swing.JTextField CampEnderecoProfessor;
+    private javax.swing.JTextField CampIdadeAluno;
+    private javax.swing.JTextField CampMatriculaAluno;
+    private javax.swing.JTextField CampMatriculaAlunoNota;
     private javax.swing.JTextField CampMatriculaCA51;
-    private javax.swing.JTextField CampMatriculaCP;
-    private javax.swing.JTextField CampMatriculaCoA;
-    private javax.swing.JTextField CampMatriculaCoT;
-    private javax.swing.JTextField CampNomeCA;
-    private javax.swing.JTextField CampNomeCP;
-    private javax.swing.JTextField CampNomeCoA;
-    private javax.swing.JTextField CampNomeMaeCoA;
-    private javax.swing.JTextField CampNomeMãeCA;
-    private javax.swing.JTextField CampNomePaiCA;
-    private javax.swing.JTextField CampNomePaiCoA;
-    private javax.swing.JTextField CampSalaCT;
-    private javax.swing.JTextField CampSalaCoT;
-    private javax.swing.JTextField CampSexoCA;
-    private javax.swing.JTextField CampSexoCP;
-    private javax.swing.JTextField CampSexoCoA;
-    private javax.swing.JTextField CampTurmaCT;
-    private javax.swing.JTextField CampTurmaCoT;
-    private javax.swing.JTextField CampTurnoCT;
-    private javax.swing.JTextField CampTurnoCoT;
-    private javax.swing.JInternalFrame ConsultarAluno;
-    private javax.swing.JInternalFrame ConsultarTurma;
+    private javax.swing.JTextField CampMatriculaProfessor;
+    private javax.swing.JTextField CampNomeAluno;
+    private javax.swing.JTextField CampNomeMaeAluno;
+    private javax.swing.JTextField CampNomePaiAluno;
+    private javax.swing.JTextField CampNomeProfessor;
+    private javax.swing.JTextField CampSalaTurma;
+    private javax.swing.JTextField CampSexoAluno;
+    private javax.swing.JTextField CampSexoProfessor;
+    private javax.swing.JTextField CampTurma;
+    private javax.swing.JTextField CampTurnoTurma;
+    private javax.swing.JButton ConsultarNotas;
+    private javax.swing.JTextField Disciplina1;
+    private javax.swing.JTextField Disciplina2;
+    private javax.swing.JTextField Disciplina3;
+    private javax.swing.JTextField Disciplina4;
+    private javax.swing.JButton EnserirNota;
+    private javax.swing.JButton ExcluirAluno;
+    private javax.swing.JButton ExcluirProfessor;
+    private javax.swing.JButton ExcluirTurma;
+    private javax.swing.JTextField Falta11ºB;
+    private javax.swing.JTextField Falta12ºB;
+    private javax.swing.JTextField Falta13ºB;
+    private javax.swing.JTextField Falta14ºB;
+    private javax.swing.JTextField Falta21ºB;
+    private javax.swing.JTextField Falta22ºB;
+    private javax.swing.JTextField Falta23ºB;
+    private javax.swing.JTextField Falta24ºB;
+    private javax.swing.JTextField Falta31ºB;
+    private javax.swing.JTextField Falta32ºB;
+    private javax.swing.JTextField Falta33ºB;
+    private javax.swing.JTextField Falta34ºB;
+    private javax.swing.JTextField Falta41ºB;
+    private javax.swing.JTextField Falta42ºB;
+    private javax.swing.JTextField Falta43ºB;
+    private javax.swing.JTextField Falta44ºB;
+    private javax.swing.JButton Historico;
+    private javax.swing.JButton LimpaNotas;
+    private javax.swing.JButton LimpaTabNotas;
+    private javax.swing.JButton LimparAluno;
+    private javax.swing.JButton LimparProfessor;
+    private javax.swing.JButton LimparTurma;
     private javax.swing.JInternalFrame ListarAluno;
+    private javax.swing.JButton ListarAlunoAluno;
     private javax.swing.JInternalFrame ListarProfessor;
+    private javax.swing.JButton ListarProfessorProfessor;
     private javax.swing.JInternalFrame ListarTurma;
-    private javax.swing.JTable Tabela;
-    private javax.swing.JTable Tabela1;
-    private javax.swing.JTable Tabela2;
+    private javax.swing.JButton ListarTurmaTurma;
+    private javax.swing.JTextField Nota11ºB;
+    private javax.swing.JTextField Nota12ºB;
+    private javax.swing.JTextField Nota13ºB;
+    private javax.swing.JTextField Nota14ºB;
+    private javax.swing.JTextField Nota21ºB;
+    private javax.swing.JTextField Nota22ºB;
+    private javax.swing.JTextField Nota23ºB;
+    private javax.swing.JTextField Nota24ºB;
+    private javax.swing.JTextField Nota31ºB;
+    private javax.swing.JTextField Nota32ºB;
+    private javax.swing.JTextField Nota33ºB;
+    private javax.swing.JTextField Nota34ºB;
+    private javax.swing.JTextField Nota41ºB;
+    private javax.swing.JTextField Nota42ºB;
+    private javax.swing.JTextField Nota43ºB;
+    private javax.swing.JTextField Nota44ºB;
+    private javax.swing.JInternalFrame NotasFaltas;
+    private javax.swing.JInternalFrame Professor;
+    private javax.swing.JButton SalvaAluno;
+    private javax.swing.JButton SalvaTurma;
+    private javax.swing.JButton SalvaTurma1;
+    private javax.swing.JButton SelecionaAluno;
+    private javax.swing.JButton SelecionaProfessor;
+    private javax.swing.JButton SelecionaTurma;
+    private javax.swing.JTable TabelaAluno;
+    private javax.swing.JTable TabelaNotasFaltas;
+    private javax.swing.JTable TabelaProfessor;
+    private javax.swing.JTable TabelaTurma;
+    private javax.swing.JInternalFrame Turma;
     private javax.swing.JInternalFrame cadastroUsuario;
-    private javax.swing.JTextField campCodigoTurmaCoP;
     private javax.swing.JTextField campConfirmaSenhanUsuario;
-    private javax.swing.JTextField campEnderecoCoP;
     private javax.swing.JTextField campLogin;
     private javax.swing.JTextField campLoginUsuario;
-    private javax.swing.JTextField campMatricularCoP;
-    private javax.swing.JTextField campNomeCoP;
     private javax.swing.JTextField campNomemUsuario;
     private javax.swing.JTextField campSenha;
     private javax.swing.JTextField campSenhaUsuario;
-    private javax.swing.JTextField campSexoCoP;
     private javax.swing.JInternalFrame home;
-    private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton4;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel100;
-    private javax.swing.JLabel jLabel101;
-    private javax.swing.JLabel jLabel102;
-    private javax.swing.JLabel jLabel103;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel110;
-    private javax.swing.JLabel jLabel111;
-    private javax.swing.JLabel jLabel112;
-    private javax.swing.JLabel jLabel113;
-    private javax.swing.JLabel jLabel114;
-    private javax.swing.JLabel jLabel115;
-    private javax.swing.JLabel jLabel116;
-    private javax.swing.JLabel jLabel117;
-    private javax.swing.JLabel jLabel119;
-    private javax.swing.JLabel jLabel120;
-    private javax.swing.JLabel jLabel122;
-    private javax.swing.JLabel jLabel123;
-    private javax.swing.JLabel jLabel124;
-    private javax.swing.JLabel jLabel125;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel150;
     private javax.swing.JLabel jLabel151;
     private javax.swing.JLabel jLabel152;
     private javax.swing.JLabel jLabel153;
     private javax.swing.JLabel jLabel154;
     private javax.swing.JLabel jLabel155;
+    private javax.swing.JLabel jLabel156;
+    private javax.swing.JLabel jLabel157;
     private javax.swing.JLabel jLabel158;
     private javax.swing.JLabel jLabel159;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel160;
     private javax.swing.JLabel jLabel161;
+    private javax.swing.JLabel jLabel162;
+    private javax.swing.JLabel jLabel166;
+    private javax.swing.JLabel jLabel167;
+    private javax.swing.JLabel jLabel168;
+    private javax.swing.JLabel jLabel169;
+    private javax.swing.JLabel jLabel170;
+    private javax.swing.JLabel jLabel171;
+    private javax.swing.JLabel jLabel172;
+    private javax.swing.JLabel jLabel173;
     private javax.swing.JLabel jLabel174;
     private javax.swing.JLabel jLabel175;
+    private javax.swing.JLabel jLabel176;
+    private javax.swing.JLabel jLabel177;
+    private javax.swing.JLabel jLabel178;
+    private javax.swing.JLabel jLabel179;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel180;
+    private javax.swing.JLabel jLabel181;
+    private javax.swing.JLabel jLabel182;
+    private javax.swing.JLabel jLabel183;
+    private javax.swing.JLabel jLabel184;
+    private javax.swing.JLabel jLabel185;
+    private javax.swing.JLabel jLabel186;
+    private javax.swing.JLabel jLabel187;
+    private javax.swing.JLabel jLabel188;
+    private javax.swing.JLabel jLabel189;
     private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel190;
+    private javax.swing.JLabel jLabel191;
+    private javax.swing.JLabel jLabel192;
+    private javax.swing.JLabel jLabel193;
+    private javax.swing.JLabel jLabel194;
+    private javax.swing.JLabel jLabel195;
     private javax.swing.JLabel jLabel196;
     private javax.swing.JLabel jLabel197;
     private javax.swing.JLabel jLabel198;
@@ -3806,10 +4009,6 @@ public class Descktop extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel200;
     private javax.swing.JLabel jLabel201;
     private javax.swing.JLabel jLabel202;
-    private javax.swing.JLabel jLabel203;
-    private javax.swing.JLabel jLabel204;
-    private javax.swing.JLabel jLabel205;
-    private javax.swing.JLabel jLabel206;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
@@ -3823,15 +4022,18 @@ public class Descktop extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel86;
@@ -3840,15 +4042,10 @@ public class Descktop extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
-    private javax.swing.JLabel jLabel91;
     private javax.swing.JLabel jLabel92;
-    private javax.swing.JLabel jLabel93;
     private javax.swing.JLabel jLabel94;
     private javax.swing.JLabel jLabel95;
     private javax.swing.JLabel jLabel96;
-    private javax.swing.JLabel jLabel97;
-    private javax.swing.JLabel jLabel98;
-    private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
@@ -3856,17 +4053,13 @@ public class Descktop extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
-    private javax.swing.JPanel jPanel18;
-    private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
     private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel23;
-    private javax.swing.JPanel jPanel26;
-    private javax.swing.JPanel jPanel27;
-    private javax.swing.JPanel jPanel28;
-    private javax.swing.JPanel jPanel29;
+    private javax.swing.JPanel jPanel24;
+    private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -3880,6 +4073,7 @@ public class Descktop extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JInternalFrame login;
     // End of variables declaration//GEN-END:variables
 }
